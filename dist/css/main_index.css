@@ -31,6 +31,22 @@
   color: inherit;
 }
 
+.main-header .logo {
+  display: table-cell;
+}
+
+.main-header .logo a h1 {
+  text-indent: -9999px;
+  white-space: nowrap;
+  position: absolute;
+  top: -100px;
+}
+
+.main-header .logo a img {
+  width: 1.8rem;
+  vertical-align: middle;
+}
+
 .main-header .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;

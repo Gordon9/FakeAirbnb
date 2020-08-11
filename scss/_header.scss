@@ -4,7 +4,7 @@
     position: fixed;
     height: 65px;
     width: 100vw;
-    // background: #4a7473;
+    // background: gray;
     padding: 0 10vw;
     color: #fff;
     z-index: 1;
@@ -13,6 +13,21 @@
         text-decoration: none;
         color: inherit;
         // text-transform: uppercase;
+    }
+    .logo {
+        display: table-cell;
+        a {
+            h1 {
+                text-indent: -9999px;
+                white-space: nowrap;
+                position: absolute;
+                top: -100px;
+            }
+            img {
+                width: 1.8rem;
+                vertical-align: middle;
+            }
+        }
     }
     .nav-links {
         display: flex;
