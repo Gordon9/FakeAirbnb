@@ -82,8 +82,7 @@
 }
 
 .main-header .nav-links .nav-link a {
-  margin: .2rem 0;
-  padding: 1rem .5rem;
+  padding: 0.4rem .5rem;
   display: block;
 }
 
@@ -371,7 +370,7 @@
   .main-header .nav-links {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     opacity: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -383,17 +382,18 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 10rem 0;
-    width: 100vw;
+    padding: 2rem 0;
+    width: 76%;
     height: 100vh;
-    font-size: 2rem;
-    background: #272727;
+    font-size: 0.8rem;
+    background: #fff;
     -webkit-transition: opacity .8s .5s, -webkit-clip-path 1s .5s;
     transition: opacity .8s .5s, -webkit-clip-path 1s .5s;
     transition: opacity .8s .5s, clip-path 1s .5s;
     transition: opacity .8s .5s, clip-path 1s .5s, -webkit-clip-path 1s .5s;
     -webkit-clip-path: circle(200px at top right);
             clip-path: circle(200px at top right);
+    color: #000;
   }
   .main-header .nav-links .nav-link {
     opacity: 0;
@@ -454,12 +454,12 @@
             animation: pulse 1s;
   }
   .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line {
-    background: #fff;
+    background: #000;
     -webkit-animation: openMid 0.8s forwards;
             animation: openMid 0.8s forwards;
   }
   .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::before, .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::after {
-    background: #fff;
+    background: inherit;
   }
   .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::before {
     -webkit-animation: openTop 0.8s forwards;

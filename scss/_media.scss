@@ -21,18 +21,22 @@
         .nav-links {
             position: absolute;
             top: 0;
-            left: 0;
+            right: 0;
             opacity: 0;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            padding: 10rem 0;
-            width: 100vw;
+            // padding: 10rem 0;
+            padding: 2rem 0;
+            // width: 100vw;
+            width: 76%;
             height: 100vh;
-            font-size: 2rem;
-            background: #272727;
+            font-size: 0.8rem;
+            // background: #272727;
+            background: #fff;
             transition: opacity .8s .5s, clip-path 1s .5s;
             clip-path: circle(200px at top right);
+            color: #000;
             .nav-link {
                 opacity: 0;
                 transform: translateX(100%);
@@ -77,11 +81,11 @@
             border-radius: 50%;
             animation: pulse 1s;
             .menu-icon__line {
-                background: #fff;
+                background: #000;
                 animation: openMid 0.8s forwards;
                 &::before,
                 &::after {
-                    background: #fff;
+                    background: inherit;
                 }
                 &::before {
                     animation: openTop 0.8s forwards;
