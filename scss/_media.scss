@@ -4,13 +4,13 @@
         .menu-icon {
             display: block;
             &__line {
-                animation: closeMid 1s backwards;
+                animation: closeMid 0.8s backwards;
                 animation-direction: reverse;
                 &::before {
-                    animation: closeTop 1s backwards;
+                    animation: closeTop 0.8s backwards;
                 }
                 &::after {
-                    animation: closeBtm 1s backwards;
+                    animation: closeBtm 0.8s backwards;
                 }
                 &::before,
                 &::after {
@@ -32,15 +32,12 @@
             font-size: 2rem;
             background: #272727;
             transition: opacity .8s .5s, clip-path 1s .5s;
-            clip-path: circle(200px at top rigth);
+            clip-path: circle(200px at top right);
             .nav-link {
                 opacity: 0;
                 transform: translateX(100%);
                 width: 100%;
                 text-align: center;
-                a {
-                    // padding: 2rem 0;
-                }
             }
         }
         .menu-btn:checked~.nav-links {
