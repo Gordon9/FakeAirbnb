@@ -26,15 +26,6 @@
   transition: .4s ease-out;
 }
 
-.main-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.main-header .logo {
-  display: table-cell;
-}
-
 .main-header .logo a h1 {
   text-indent: -9999px;
   white-space: nowrap;
@@ -45,6 +36,11 @@
 .main-header .logo a img {
   width: 1.8rem;
   vertical-align: middle;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main-header .nav-links {
@@ -475,7 +471,7 @@
             animation: openMid 0.8s forwards;
   }
   .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::before, .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::after {
-    background: inherit;
+    background: #000;
   }
   .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::before {
     -webkit-animation: openTop 0.8s forwards;

@@ -85,7 +85,7 @@
                 animation: openMid 0.8s forwards;
                 &::before,
                 &::after {
-                    background: inherit;
+                    background: #000;
                 }
                 &::before {
                     animation: openTop 0.8s forwards;
