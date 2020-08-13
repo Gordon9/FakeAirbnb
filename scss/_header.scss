@@ -117,7 +117,8 @@
     &.scrolled {
         height: 50px;
         background: rgb(255, 255, 255);
-        box-shadow: 0px 0.4px 0.2px rgb(129, 127, 127);
+        // box-shadow: 0px 0.4px 0.2px rgb(129, 127, 127);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
         color: #000;
         .menu-icon {
             &__line,
