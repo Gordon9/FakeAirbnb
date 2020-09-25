@@ -1,0 +1,118 @@
+.outer-w {
+  /* background: lightblue; */
+  width: 100% !important;
+  height: 64px !important;
+  position: absolute !important;
+}
+
+.inner-w {}
+
+header {
+  font-weight: 600;
+}
+
+.main-header {
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.outer-header {
+  transition-duration: 200ms !important;
+  transition-property: background, box-shadow !important;
+  transition-timing-function: ease-out !important;
+  width: 100% !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.inner-header {
+  display: table !important;
+  width: 100% !important;
+  border-spacing: 0px !important;
+}
+
+.inner-header div:nth-child(1) {
+  /* background: lightseagreen; */
+}
+
+.inner-header div:nth-child(2) {
+  background: lightskyblue;
+}
+
+.inner-header div:nth-child(3) {
+  background: lightyellow;
+}
+
+.logo {
+  display: table-cell;
+  vertical-align: middle !important;
+}
+
+.logo-w {
+  position: relative;
+  z-index: 20 !important;
+}
+
+.logo-tik {
+  display: table-cell !important;
+}
+
+.outer-logo {
+  display: table-cell !important;
+  height: 64px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  transition: 0.25s color !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+}
+
+.inner-logo {
+  display: inline-block;
+}
+
+.inner-logo-lk {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  font-size: 34px !important;
+  transition: 0.25s color !important;
+  color: #ffffff !important;
+}
+
+.searchbox {
+  display: table-cell;
+  vertical-align: middle !important;
+  width: 100% !important;
+}
+
+.main-nav {
+  display: table-cell;
+  vertical-align: middle !important;
+}
+
+.temp-content {
+  height: 500px;
+  background-color: blanchedalmond;
+}
+
+.temp-bg {
+  margin: auto;
+  padding-top: 100px;
+  height: 500px;
+  background-image: url(https://z1.muscache.cn/pictures/carson/carson-1599448388147/original/b355a2ad-09d2-41a5-8d70-3408802891da.jpg);
+}
+
+/* SmartLayout  */
+
+@media (min-width: 744px) {
+  .outer-w {
+    height: 81px !important;
+    /* background: lightgoldenrodyellow; */
+  }
+  .outer-logo {
+    height: 80px !important;
+  }
+}
