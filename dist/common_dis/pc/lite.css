@@ -264,10 +264,15 @@ header {
 
 /* Phone layout */
 
-@media (max-wdith: 744px) {
+@media (max-width: 743px) {
   .outer-search-phone {
     display: table-cell !important;
     width: 100% !important;
     vertical-align: middle !important;
+  }
+  .inner-search-lk {
+    display: flex !important;
+    align-items: center !important;
+    flex-grow: 1 !important;
   }
 }

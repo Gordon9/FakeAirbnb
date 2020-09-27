@@ -5,8 +5,6 @@ let logoLink = document.querySelector(".logo-tik");
 let w;
 let outerInput = document.querySelector(".outer-search");
 let searchInput = document.querySelector(".text");
-console.log("outerInput:", outerInput);
-console.log("searchInput:", searchInput);
 
 function detachLogoWidth() {
   w = document.body.clientWidth;
@@ -38,19 +36,22 @@ function handleLogo(e) {
 
 // search
 function handleInput(focus = false) {
+  if (w < 743) {
+    return;
+  }
   if (focus) {
-    console.log("focus now");
+    // console.log("focus now");
     outerInput.classList.remove("outer-search");
     outerInput.classList.add("outer-search-addwidth");
   } else {
-    console.log("no focus");
+    // console.log("no focus");
     outerInput.classList.remove("outer-search-addwidth");
     outerInput.classList.add("outer-search");
   }
 }
 
 function detachSearchWidth() {
-  if (w <= 744) {
+  if (w <= 743) {
     outerInput.classList.remove("outer-search");
     outerInput.classList.add("outer-search-phone");
   } else {
@@ -60,6 +61,7 @@ function detachSearchWidth() {
 }
 
 detachLogoWidth();
+detachSearchWidth();
 
 window.addEventListener("resize", detachLogoWidth);
 window.addEventListener("resize", detachSearchWidth);
