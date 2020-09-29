@@ -1,5 +1,4 @@
 .outer-w {
-  /* background: lightblue; */
   width: 100% !important;
   height: 64px !important;
   position: absolute !important;
@@ -29,18 +28,6 @@ header {
   display: table !important;
   width: 100% !important;
   border-spacing: 0px !important;
-}
-
-/* .inner-header div:nth-child(1) {
-  background: lightseagreen;
-}
-
-.inner-header div:nth-child(2) {
-  background: lightskyblue;
-} */
-
-.inner-header div:nth-child(3) {
-  background: lightyellow;
 }
 
 /* logo */
@@ -201,6 +188,86 @@ header {
   vertical-align: middle !important;
 }
 
+.main-nav .navigation {
+  display: inherit !important;
+}
+
+.main-nav .nav-w {
+  display: table !important;
+  list-style: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  height: 64px !important;
+}
+
+.nav-w .nav-item {
+  display: table-cell !important;
+}
+
+/* .nav-w .nav-item-hide {
+  opacity: 0 !important;
+  display: none !important;
+} */
+
+.outer-nav-item {
+  position: relative !important;
+}
+
+._nav-item-button {
+  appearance: none !important;
+  background: transparent !important;
+  border: none !important;
+  display: inline-block !important;
+  height: 64px !important;
+  line-height: 64px !important;
+  text-decoration: none !important;
+  margin: 0px !important;
+  position: relative !important;
+  white-space: nowrap !important;
+  transition: color 0.25s ease 0s !important;
+  color: rgb(255, 255, 255) !important;
+  padding: 0px 4px !important;
+}
+
+.inner-nav-item {
+  height: 100% !important;
+  vertical-align: middle !important;
+  box-sizing: border-box !important;
+  border-bottom: 2px solid transparent !important;
+}
+
+.nav-item:hover .inner-nav-item {
+  height: 100% !important;
+  vertical-align: middle !important;
+  box-sizing: border-box !important;
+  border-bottom: 2px solid currentColor !important;
+}
+
+.inner-nav-item-lk {
+  display: inline-block !important;
+  padding: 8px !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  border-bottom: 2px solid transparent !important;
+}
+
+.nav-item-icon {
+  display: inline-block !important;
+  margin-right: 0.428571em !important;
+  position: relative !important;
+  top: 0.0714286em !important;
+}
+
+._icon-lk {
+  height: 6px !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translate3d(4px, -8px, 0px) !important;
+  width: 6px !important;
+  fill: rgb(255, 255, 255) !important;
+}
+
 .temp-content {
   height: 529px !important;
   background-color: blanchedalmond;
@@ -253,6 +320,11 @@ header {
     position: absolute;
     left: auto !important;
     background-position: center !important;
+  }
+  /* main-nav */
+  ._nav-item-button {
+    height: 80px !important;
+    line-height: 80px !important;
   }
 }
 

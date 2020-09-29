@@ -19,3 +19,23 @@ a {
 a {
   font-weight: inherit;
 }
+
+nav {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+button {
+  font-weight: inherit;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+
+
