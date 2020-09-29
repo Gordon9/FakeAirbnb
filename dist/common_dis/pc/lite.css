@@ -39,7 +39,7 @@ header {
 
 .logo-w {
   position: relative;
-  z-index: 20 !important;
+  z-index: 22 !important;
 }
 
 .logo-tik {
@@ -123,6 +123,7 @@ header {
   border-radius: 4px !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 48px !important;
+  will-change: transform !important;
 }
 
 .outer-box {
@@ -179,6 +180,25 @@ header {
 
 .inner-search-lk .text:focus {
   outline: none !important;
+}
+
+._button-cancel {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+  /* color: #484848 !important; */
+  color: #ffffff;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  padding: 4px !important;
+  text-decoration: none !important;
+  width: auto !important;
+  min-width: 48px !important;
+  outline: none;
 }
 
 /* main-nav */
@@ -270,7 +290,7 @@ header {
 
 .temp-content {
   height: 529px !important;
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
   position: relative !important;
 }
 
@@ -284,7 +304,7 @@ header {
   right: 0 !important;
   left: 0 !important;
   width: 100% !important;
-  background-image: url(https://z1.muscache.cn/pictures/carson/carson-1599448388147/original/b355a2ad-09d2-41a5-8d70-3408802891da.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .0) 300px, rgba(0, 0, 0, 0) 100%), url(https://z1.muscache.cn/pictures/carson/carson-1599448388147/original/b355a2ad-09d2-41a5-8d70-3408802891da.jpg);
 }
 
 /* SmartLayout  */
@@ -316,6 +336,12 @@ header {
     width: 100% !important;
     vertical-align: middle !important;
   }
+  .search-cancel {
+    display: table-cell !important;
+    vertical-align: middle !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
   .temp-bg {
     position: absolute;
     left: auto !important;
@@ -334,17 +360,82 @@ header {
   }
 }
 
+@media (max-width: 1340px) {
+  .nav-w .nav-item-hide {
+    opacity: 0 !important;
+    display: none !important;
+  }
+}
+
+@media (max-width: 1128px) {
+  .logo {
+    padding-right: 24px;
+  }
+  .main-nav.main-nav-hide {
+    opacity: 0 !important;
+    display: none !important;
+  }
+}
+
 /* Phone layout */
 
 @media (max-width: 743px) {
   .outer-search-phone {
-    display: table-cell !important;
+    /* display: table-cell !important;
     width: 100% !important;
-    vertical-align: middle !important;
+    vertical-align: middle !important; */
+    display: block !important;
+    position: absolute !important;
+    height: 64px !important;
+    left: 0px !important;
+    right: 0px !important;
+    top: 0px !important;
+    transition: z-inxdex 300ms step-end !important;
+    z-index: 21 !important;
+  }
+  .up-index {
+    z-index: 22 !important;
+  }
+  .inner-search {
+    position: absolute !important;
+    left: 0px !important;
+    top: 0px !important;
+    right: 0px !important;
+    bottom: 0px !important;
+    align-items: center !important;
+    display: flex !important;
+    overflow-x: hidden !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
   }
   .inner-search-lk {
     display: flex !important;
     align-items: center !important;
-    flex-grow: 1 !important;
+    transition: transform 300ms ease-out !important;
+    will-change: transform !important;
+    transform: translate3d(80px, 0, 0) !important;
+  }
+  .inner-search-lk-full {
+    transition: transform 300ms ease-out 0s !important;
+    display: flex !important;
+    will-change: transform !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+  }
+  .search-icon-hide {
+    display: none !important;
+  }
+  .search-cancel {
+    display: flex !important;
+    flex-shrink: 0 !important;
+    justify-content: flex-end !important;
+    transition: opacity 300ms ease-in 200ms !important;
+  }
+  .pseudo-div {
+    width: 32px !important;
+    display: block !important;
+  }
+  .pseudo-div-hide {
+    width: 0px !important;
+    display: none !important;
   }
 }

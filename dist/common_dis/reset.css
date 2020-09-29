@@ -19,16 +19,3 @@ body {
 body:lang(zh) {
   font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
 }
-
-input {
-  line-height: normal;
-}
-
-input,
-form {
-  box-sizing: border-box;
-}
-
-/* input {
-  outline: none !important;
-} */

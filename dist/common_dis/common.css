@@ -37,5 +37,10 @@ button {
   font-size: 100%;
 }
 
+input {
+  line-height: normal;
+}
 
-
+input, form {
+  box-sizing: border-box;
+}
