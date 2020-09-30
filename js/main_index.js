@@ -23,13 +23,15 @@ function renderTriangle(avtive) {
 
 function addTriangle(w) {
   if (w <= 1127) {
+    logoLink.href = "#";
     renderTriangle(true);
   } else {
+    logoLink.href = "/?logo=1";
     renderTriangle(false);
   }
 }
 
-function handleLogo(e) {
+function handleLogo() {
   if (w >= 1127) {
     return;
   }
@@ -39,9 +41,6 @@ function handleLogo(e) {
 // Search
 function handleInput(focus = false) {
   if (w > 743) {
-    // handleSearchIcon();
-    // break;
-
     if (focus) {
       console.log("focus now");
       outerInput.classList.remove("outer-search");
@@ -54,15 +53,6 @@ function handleInput(focus = false) {
   } else {
     handleSearchIcon(focus);
   }
-  //   if (focus) {
-  //     console.log("focus now");
-  //     outerInput.classList.remove("outer-search");
-  //     outerInput.classList.add("outer-search-addwidth");
-  //   } else {
-  //     console.log("no focus");
-  //     outerInput.classList.remove("outer-search-addwidth");
-  //     outerInput.classList.add("outer-search");
-  //   }
 }
 
 function detectSearchWidth() {
@@ -92,45 +82,12 @@ function handleSearchIcon(focus) {
 }
 
 // Nav
-function findNavLi() {
-  let liTags;
-  let searchText = "手机端";
-  let found;
-  let foundParent;
-
-  for (let i = 0; i < mainNav.length; i++) {
-    if (mainNav[i].innerText === searchText) {
-      found = mainNav[i];
-
-      foundParent =
-        found.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
-      break;
-    }
-  }
-
-  console.log("found:", found);
-  console.log("foundParent:", foundParent);
-  oldFound = foundParent;
-  console.log("oldFound:", oldFound);
-
-  if (w >= 1340) {
-    return;
-  }
-
-  hideNavLi(foundParent);
-}
-
-function hideNavLi(foundParent) {}
 
 detectLogoWidth();
 detectSearchWidth();
-// handleSearchIcon();
-
-// findNavLi();
 
 window.addEventListener("resize", detectLogoWidth);
 window.addEventListener("resize", detectSearchWidth);
-// window.addEventListener("resize", findNavLi);
 
 logoLink.addEventListener("click", handleLogo);
 searchInput.addEventListener("focus", () => handleInput(true));
