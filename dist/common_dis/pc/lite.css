@@ -466,6 +466,207 @@ header {
   font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
 }
 
+/* Main Content */
+
+._main-content {
+  max-width: 1080px !important;
+  padding-left: 24px !important;
+  padding-right: 24px;
+  margin-top: -96px !important;
+}
+
+._main-searchbox {
+  position: relative !important;
+  margin-bottom: 16px !important;
+  z-index: 4 !important;
+}
+
+._search-bar-with-date {
+  display: flex !important;
+  position: relative !important;
+  width: 100% !important;
+  height: 72px !important;
+  background-color: #ffffff !important;
+  border: 1px solid #EBEBEB !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  z-index: 1 !important;
+}
+
+._search-bar-with-date-btn {
+  width: 100px !important;
+  height: 70px !important;
+  background-color: #ffffff !important;
+  border: 0px !important;
+  border-radius: 4px 0 0 4px !important;
+  display: flex !important;
+  outline: none !important;
+  padding-left: 24px !important;
+  text-align: left !important;
+  align-items: center !important;
+}
+
+._search-bar-with-date-span {
+  color: #484848 !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  font-family: Circular, "Hiragino Sans GB", "华文细黑", "STHeiti", "微软雅黑", "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  line-height: 70px !important;
+  text-align: center !important;
+  width: auto !important;
+}
+
+._search-bar-with-date-icon {
+  vertical-align: middle !important;
+  margin: auto !important;
+}
+
+._searchform {
+  width: 100% !important;
+}
+
+#test-search {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  position: relative !important;
+  border-left: 3px solid red;
+  height: 70px !important;
+}
+
+._destination-city-view {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  position: relative !important;
+  transition: width 0.3s !important;
+  border-left: 1px solid #e4e4e4 !important;
+  height: 70px !important;
+}
+
+._destination-city-view-w {
+  display: table-cell !important;
+  width: 100% !important;
+}
+
+._destination-city-view-icon {
+  display: table-cell !important;
+  padding-left: 16px;
+  vertical-align: middle !important;
+}
+
+._destination-city-view-input {
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+._destination-city-view-inputbox {
+  width: 100% !important;
+  height: 100% !important;
+  padding-left: 12px !important;
+  padding-right: 4px !important;
+  position: relative !important;
+}
+
+._destination-city-view-inputbox-o {
+  display: table !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  table-layout: fixed !important;
+  white-space: nowrap !important;
+  width: 100% !important;
+}
+
+._destination-city-view-inputbox-i {
+  display: table-cell !important;
+  height: 100% !important;
+  vertical-align: middle !important;
+  width: 100% !important;
+}
+
+._destination-city-view-inputbox-lk {
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+._destination-city-view-input-lk {
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+  text-overflow: ellipsis !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+}
+
+._destination-city-view-input-lk:focus {
+  outline: none !important;
+}
+
+._check-in-out {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  position: relative !important;
+  transition: width 0.3s !important;
+  border-left: 1px solid #e4e4e4 !important;
+  border-right: 1px solid #e4e4e4 !important;
+}
+
+._check-in-out-icon {
+  display: table-cell !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  vertical-align: middle !important;
+}
+
+._check-in-out-box {
+  display: table-cell !important;
+  width: auto !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  color: #484848 !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  font-family: Circular, "Hiragino Sans GB", "华文细黑", "STHeiti", "微软雅黑", "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+._check-in-out-box-w:hover {
+  cursor: pointer !important;
+}
+
+._check-in-out-box-line {
+  height: 2px !important;
+  width: 8px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  background: #767676 !important;
+}
+
+._search-btn-w {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  position: relative !important;
+  transition: width 0.3s !important;
+}
+
+._search-btn-lk {
+  font-size: 16px !important;
+  line-height: 15px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+  color: #ffffff !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+  border-radius: 4px !important;
+  border: 0px !important;
+  margin: 12px !important;
+  margin-left: 12px !important;
+  height: 48px !important;
+  text-align: center !important;
+  display: inline-block !important;
+  float: right !important;
+  white-space: nowrap !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
@@ -578,6 +779,13 @@ header {
     right: 0px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+  /* Main Content */
+  ._main-content {
+    margin-bottom: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
   }
 }
 
