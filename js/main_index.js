@@ -9,6 +9,9 @@ let mainNav = document.querySelectorAll(".inner-nav-item-lk");
 let searchIcon = document.querySelector(".search-icon");
 let searchLk = document.querySelector(".inner-search-lk");
 let pseudoDiv = document.querySelector(".pseudo-div");
+let outerTriangle = document.querySelector("._outer-triangle");
+let innerTriangle = document.querySelector("._inner-triangle");
+let innerTriangleLk = document.querySelector("._inner-triangle-lk");
 
 function detectLogoWidth() {
   w = document.body.clientWidth;
@@ -17,12 +20,12 @@ function detectLogoWidth() {
 
 function renderTriangle(avtive) {
   avtive
-    ? innerLogo.classList.add("active")
-    : innerLogo.classList.remove("active");
+    ? outerTriangle.classList.add("active")
+    : outerTriangle.classList.remove("active");
 }
 
 function addTriangle(w) {
-  if (w <= 1127) {
+  if (w < 1128) {
     logoLink.href = "#";
     renderTriangle(true);
   } else {
@@ -32,10 +35,24 @@ function addTriangle(w) {
 }
 
 function handleLogo() {
-  if (w >= 1127) {
+  if (w >= 1128) {
     return;
   }
-  innerLogo.classList.toggle("triangle");
+  handleTriangle();
+}
+
+function handleTriangle() {
+  let isActive = innerTriangle.classList.contains("_inner-triangle");
+  console.log("isActive:", isActive);
+  if (isActive) {
+    innerTriangle.classList.remove("_inner-triangle");
+    innerTriangle.classList.add("_inner-triangle-active");
+    innerTriangleLk.style.transform = `rotate(180deg)`;
+  } else {
+    innerTriangle.classList.remove("_inner-triangle-active");
+    innerTriangle.classList.add("_inner-triangle");
+    innerTriangleLk.style.transform = `rotate(0deg)`;
+  }
 }
 
 // Search
@@ -80,8 +97,6 @@ function handleSearchIcon(focus) {
     outerInput.classList.remove("up-index");
   }
 }
-
-// Nav
 
 detectLogoWidth();
 detectSearchWidth();
