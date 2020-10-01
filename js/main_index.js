@@ -12,6 +12,7 @@ let pseudoDiv = document.querySelector(".pseudo-div");
 let outerTriangle = document.querySelector("._outer-triangle");
 let innerTriangle = document.querySelector("._inner-triangle");
 let innerTriangleLk = document.querySelector("._inner-triangle-lk");
+let smartNav = document.querySelector("._smart-nav");
 
 function detectLogoWidth() {
   w = document.body.clientWidth;
@@ -39,18 +40,23 @@ function handleLogo() {
     return;
   }
   handleTriangle();
+  innerLogo.classList.toggle("active");
+  handleSearchBs();
+}
+
+function handleSearchBs() {
+  outerInput.classList.toggle("addbs");
 }
 
 function handleTriangle() {
   let isActive = innerTriangle.classList.contains("_inner-triangle");
   console.log("isActive:", isActive);
+  smartNav.classList.toggle("hide");
+  innerTriangle.classList.toggle("_inner-triangle");
+  innerTriangle.classList.toggle("_inner-triangle-active");
   if (isActive) {
-    innerTriangle.classList.remove("_inner-triangle");
-    innerTriangle.classList.add("_inner-triangle-active");
     innerTriangleLk.style.transform = `rotate(180deg)`;
   } else {
-    innerTriangle.classList.remove("_inner-triangle-active");
-    innerTriangle.classList.add("_inner-triangle");
     innerTriangleLk.style.transform = `rotate(0deg)`;
   }
 }
