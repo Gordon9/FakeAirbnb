@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: lightyellow !important;
+  background-color: #ccc !important;
 }
 
 header {
@@ -42,6 +42,8 @@ header {
 .logo-w {
   position: relative;
   z-index: 22 !important;
+  /* display: table-cell !important;
+  vertical-align: middle !important; */
 }
 
 .logo-tik {
@@ -326,6 +328,144 @@ header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .0) 300px, rgba(0, 0, 0, 0) 100%), url(https://z1.muscache.cn/pictures/carson/carson-1599448388147/original/b355a2ad-09d2-41a5-8d70-3408802891da.jpg);
 }
 
+/* Main */
+
+/* banner */
+
+._site-content {
+  position: relative !important;
+  display: block !important;
+}
+
+._o-site-content {
+  height: 529px !important;
+  /* background-color: lightblue !important; */
+}
+
+._i-site-content {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+._i-site-content-lk {
+  min-width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  transition: 1s opacity !important;
+}
+
+._main-banner {
+  position: relative !important;
+  display: block !important;
+  height: 100% !important;
+}
+
+._main-banner-bg {
+  position: relative !important;
+  height: 100% !important;
+  transition: opacity 0.5s !important;
+  background-color: #241411 !important;
+  opacity: 1 !important;
+}
+
+._main-banner-bg-o {
+  height: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #241411 !important;
+}
+
+._main-banner-bg-i {
+  margin: 0 auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  padding-top: 62px !important;
+  height: 100% !important;
+  color: #ffffff !important;
+}
+
+._main-banner-bg-i-lk {
+  background-repeat: no-repeat !important;
+  position: absolute !important;
+  left: 0px !important;
+  right: 0px !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  transition: opacity 1s !important;
+  background-size: cover !important;
+  width: 100% !important;
+}
+
+._main-banner-btn {
+  top: 0px !important;
+  left: 0px !important;
+  position: absolute !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  padding-top: 24px !important;
+  text-align: left !important;
+}
+
+._main-banner-btn-o {
+  margin-top: 20vw !important;
+  margin-left: 48px !important;
+}
+
+._banner-text-o {
+  font-size: 24px !important;
+  color: #484848 !important;
+  font-family: PingFang SC !important;
+  padding: 12px 0 !important;
+}
+
+._banner-text-o-top {
+  padding-bottom: 8px !important;
+  line-height: 26px !important;
+  font-size: 18px !important;
+  color: #ffffff !important;
+}
+
+._banner-text-o-bottom {
+  font-weight: 600 !important;
+  color: white !important;
+  margin-right: 16px !important;
+  font-size: 32px !important;
+  line-height: 34px !important;
+}
+
+._banner-button {
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-weight: 800 !important;
+  border-width: 2px !important;
+  padding-left: 22px !important;
+  padding-right: 22px !important;
+  background: transparent !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+._banner-span {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
@@ -345,6 +485,7 @@ header {
 
 ._smart-nav.hide {
   transform: translateY(-100%) !important;
+  pointer-events: none !important;
 }
 
 ._smart-nav-w {
@@ -403,11 +544,40 @@ header {
     height: 80px !important;
     line-height: 80px !important;
   }
+  /* main-banner */
+  ._main-banner {
+    background-color: #241411 !important;
+  }
+  ._main-banner-bg-i {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+  }
+  ._main-banner-bg-i-lk {
+    position: absolute !important;
+    left: auto !important;
+    background-position: center !important;
+  }
+  ._main-banner-btn {
+    z-index: 1 !important;
+  }
+  ._main-banner-btn-o {
+    /* margin-left: 0px !important; */
+    margin-top: 154px !important;
+  }
 }
 
 @media (min-width: 1128px) {
   .outer-search-addwidth {
     left: 80px !important;
+  }
+  ._main-banner-btn {
+    width: 1080px !important;
+    left: 0px !important;
+    right: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
@@ -488,5 +658,13 @@ header {
   .pseudo-div-hide {
     width: 0px !important;
     display: none !important;
+  }
+  /* Main Banner */
+  ._i-site-content {
+    height: 70vw !important;
+    position: relative !important;
+  }
+  ._main-banner-bg-i-lk {
+    background-position-x: 60% !important;
   }
 }
