@@ -13,6 +13,7 @@ let outerTriangle = document.querySelector("._outer-triangle");
 let innerTriangle = document.querySelector("._inner-triangle");
 let innerTriangleLk = document.querySelector("._inner-triangle-lk");
 let smartNav = document.querySelector("._smart-nav");
+let checkInOutBox = document.querySelector("._check-in-out");
 
 function detectLogoWidth() {
   w = document.body.clientWidth;
@@ -82,6 +83,7 @@ function detectSearchWidth() {
   if (w <= 743) {
     outerInput.classList.remove("outer-search");
     outerInput.classList.add("outer-search-phone");
+    // handleSearchBarWithDate();
   } else {
     outerInput.classList.remove("outer-search-phone");
     outerInput.classList.add("outer-search");
@@ -104,11 +106,24 @@ function handleSearchIcon(focus) {
   }
 }
 
+// SearchBarWithDate
+function handleSearchBarWithDate() {
+  if (w > 744) {
+    if (checkInOutBox.classList.contains("hide")) {
+      checkInOutBox.classList.remove("hide");
+    }
+    return;
+  }
+  checkInOutBox.classList.add("hide");
+}
+
 detectLogoWidth();
 detectSearchWidth();
+handleSearchBarWithDate();
 
 window.addEventListener("resize", detectLogoWidth);
 window.addEventListener("resize", detectSearchWidth);
+window.addEventListener("resize", handleSearchBarWithDate);
 
 logoLink.addEventListener("click", handleLogo);
 searchInput.addEventListener("focus", () => handleInput(true));

@@ -338,7 +338,8 @@ header {
 }
 
 ._o-site-content {
-  height: 529px !important;
+  /* height: 529px !important; */
+  height: 70vw !important;
   /* background-color: lightblue !important; */
 }
 
@@ -355,6 +356,7 @@ header {
   top: 0px !important;
   left: 0px !important;
   transition: 1s opacity !important;
+  height: 529px !important;
 }
 
 ._main-banner {
@@ -468,10 +470,12 @@ header {
 
 /* Main Content */
 
+
+
 ._main-content {
   max-width: 1080px !important;
   padding-left: 24px !important;
-  padding-right: 24px;
+  padding-right: 24px !important;
   margin-top: -96px !important;
 }
 
@@ -611,6 +615,10 @@ header {
   border-right: 1px solid #e4e4e4 !important;
 }
 
+._check-in-out.hide {
+  display: none !important;
+}
+
 ._check-in-out-icon {
   display: table-cell !important;
   padding-left: 8px !important;
@@ -748,6 +756,8 @@ header {
   /* main-banner */
   ._main-banner {
     background-color: #241411 !important;
+    /* position: relative !important;
+    height: 100% !important; */
   }
   ._main-banner-bg-i {
     padding-left: 80px !important;
@@ -766,6 +776,9 @@ header {
   ._main-banner-btn-o {
     /* margin-left: 0px !important; */
     margin-top: 154px !important;
+  }
+  ._o-site-content {
+    height: 529px !important;
   }
 }
 
