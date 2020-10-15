@@ -728,7 +728,35 @@ header {
 
 ._btn-fy-lk:hover, ._btn-ty-lk:hover {
   background: rgba(0, 132, 137, 0.08) !important;
+  color: rgb(0, 132, 137) !important;
 }
+
+._fy-span {
+  color: #484848 !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  line-height: 70px !important;
+  text-align: center !important;
+  width: auto !important;
+}
+
+._fy-span-middle {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  line-height: 22px !important;
+  width: auto !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._fy-span-bottom {
+  color: rgb(72, 72, 72) !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  line-height: 22px !important;
+  width: auto !important;
+}
+
+._fy_span-middle, ._fy_span-bottom {}
 
 /* Smart Nav */
 
