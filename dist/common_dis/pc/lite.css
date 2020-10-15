@@ -470,8 +470,6 @@ header {
 
 /* Main Content */
 
-
-
 ._main-content {
   max-width: 1080px !important;
   padding-left: 24px !important;
@@ -673,6 +671,63 @@ header {
   display: inline-block !important;
   float: right !important;
   white-space: nowrap !important;
+}
+
+/* Main SearchBox */
+
+._btn-fy-outer {
+  position: relative !important;
+  padding: 0px !important;
+  width: 100px !important;
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px !important;
+  border-right: 1px !important;
+  border-radius: 4px !important;
+  z-index: 100 !important;
+}
+
+._btn-fy-default {
+  -webkit-box-align: center !important;
+  width: 100px !important;
+  height: 70px !important;
+  background-color: #ffffff !important;
+  border: 0px !important;
+  border-radius: 4px 0 0 4px !important;
+  display: flex !important;
+  outline: none !important;
+  padding-left: 24px !important;
+  text-align: left !important;
+  align-items: center !important;
+}
+
+._btn-fy-lk {
+  position: relative !important;
+  background-color: rgb(255, 255, 255) !important;
+  display: block !important;
+  width: 100% !important;
+  border: none !important;
+  border-radius: inherit !important;
+  height: 70px !important;
+  padding-left: 24px !important;
+  text-align: left !important;
+  outline: none !important;
+}
+
+._btn-ty-lk {
+  position: relative !important;
+  background-color: rgb(255, 255, 255) !important;
+  display: block !important;
+  width: 100% !important;
+  border: none !important;
+  border-radius: inherit !important;
+  height: 70px !important;
+  padding-left: 24px !important;
+  text-align: left !important;
+  outline: none !important;
+}
+
+._btn-fy-lk:hover, ._btn-ty-lk:hover {
+  background: rgba(0, 132, 137, 0.08) !important;
 }
 
 /* Smart Nav */
