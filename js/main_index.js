@@ -145,51 +145,6 @@ function addEvent(el, event, callback) {
 
 addEvent(listingExperBtn, "mouseenter", () => {
   console.log("enter...");
-  // addEvent(listingExperBtn, "click", () => {
-  //   console.log("enter & click");
-  //   const btnParent = listingExperBtn.parentNode;
-  //   console.log("btnParent:", btnParent);
-  //   btnParent.remove(listingExperBtn);
-
-  //   let makeDiv = document.createElement("div");
-  //   makeDiv.innerHTML = `<div class='_btn-fy-outer'>
-  //             <button type='button' class='_btn-fy-default' aria-busy='false'>
-  //               <span>房源</span>
-  //               <div>
-  //               <svg viewBox="0 0 24 24" role="img" aria-hidden="false" aria-label="Expand" focusable="false" style="height: 1em; width: 1em; display: block; fill: currentcolor;"><path d="m12.5 17c-.4426799 0-.8662787-.1919807-1.1664869-.5259747l-6.9098769-7.71341826c-.59660019-.66535794-.55843813-1.70547282.0852286-2.3221781.6449388-.61802022 1.65241717-.57725718 2.24774529.08810076l5.74338991 6.4103161 5.7433899-6.4103161c.5953281-.66404301 1.6015344-.70612098 2.2477453-.08810076.6436667.61670528.6818288 1.65682016.0852286 2.3221781l-6.9098769 7.71341826c-.3002082.333994-.723807.5259747-1.1664869.5259747"></path></svg>
-  //               </div>
-  //             </button>
-  //             <button type='button' class='_btn-fy-lk' aria-busy='false'>
-  //               <span>房源</span>
-  //             </button>
-  //             <button type='button' class='_btn-ty-lk' aria-busy='false'>
-  //               <span>体验</span>
-  //             </button>
-  //   </div>`;
-
-  //   cnSearchBarWrapper.insertBefore(makeDiv, cnSearchBarForm);
-
-  //   let fyWrapper = document.querySelector("._btn-fy-outer");
-
-  //   btnFyLk = document.querySelector("._btn-fy-lk");
-  //   console.log("btnFyLk:", btnFyLk);
-
-  //   addEvent(btnFyLk, "mouseenter", (e) => {
-  //     console.log("e:", e);
-  //     console.log("fy enter..");
-  //   });
-
-  //   addEvent(btnFyLk, "mouseleave", () => {
-  //     console.log("fy leave..");
-
-  //     let btnFyLkParent = btnFyLk.parentNode.parentNode;
-  //     console.log("btnFyLkParent:", btnFyLkParent);
-
-  //     btnFyLkParent.remove(fyWrapper);
-  //     makeFxBtn();
-  //   });
-
-  // });
   handleBtnClick();
 });
 
@@ -262,3 +217,20 @@ addEvent(listingExperBtn, "mouseleave", () => {
 addEvent(btnFyLk, "click", () => {
   console.log("fx btn...");
 });
+
+// SearchBarPanel
+const cnSearchInput = document.querySelector(
+  "._destination-city-view-input-lk"
+);
+const cnSearchInputPanel = document.querySelector("._search-bar-panel");
+
+addEvent(cnSearchInput, "focus", showSearchInputPanel);
+addEvent(cnSearchInput, "blur", removeSearchInputPanel);
+
+function showSearchInputPanel() {
+  cnSearchInputPanel.classList.add("show");
+}
+
+function removeSearchInputPanel() {
+  cnSearchInputPanel.classList.remove("show");
+}

@@ -288,7 +288,7 @@
                     </div>
                   </button>
                 </div>
-                <form action="/s" method="GET" class="_searchform">
+                <form action="/s" method="GET" class="_searchform" autocomplete="off">
                   <div class="_destination-city-view" style="width: 62%;">
                     <div class="_destination-city-view-w">
                       <div class="_destination-city-view-icon">
@@ -336,6 +336,164 @@
                     <button type="submit" class="_search-btn-lk" aria-busy="false" style="background: rgb(255, 90, 95)">搜索</button>
                   </div>
                   <ul aria-label="搜索建议" class="" id=""></ul>
+                  <div rol="tabpanel" tabindex="-1" class="_search-bar-panel">
+                    <div role="tabpanel" tabindex="0" class="_si-panel-title">
+                      <div style="margin-top: 16px; margin-bottom: 16px;">
+                        <span class="_si-panel-title-lk">温馨提示：您还可以输入城市 + 景点、区县名进行搜索，如：巴黎 埃菲尔铁塔</span>
+                      </div>
+                    </div>
+                    <div class="_panel-horizontal-line">
+                      <div class="_panel-horizontal-line-lk">
+                      </div>
+                    </div>
+                    <div class="_panel-destination-wapper">
+                      <div style="margin-top: 32px; margin-bottom: 32px;">
+                        <div class="_panel-destination-outer">
+                          <div class="_panel-destination-inner">
+                            <div class="_cn-hot-city-wrapper">
+                              <div role="tabpanel" tabindex="0" class="_cn-hot-city-title">
+                                <div class="_cn-hot-city-title-lk">国内热门城市</div>
+                              </div>
+                              <div class="_cn-hot-city-entity"  tabindex="-1"> 
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">北京</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">上海</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">成都</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">重庆</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">杭州</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">厦门</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">广州</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">西安</div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="_panel-destination-inner">
+                            <div class="_cn-hot-city-wrapper">
+                              <div role="tabpanel" tabindex="0" class="_cn-hot-city-title">
+                                <div class="_cn-hot-city-title-lk">国际/港澳台热门城市</div>
+                              </div>
+                              <div class="_cn-hot-city-entity"  tabindex="-1"> 
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">大阪</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">东京</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">台北</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">香港</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">京东</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">曼谷</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">首尔</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">清迈</div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="_panel-destination-inner">
+                            <div class="_cn-hot-city-wrapper">
+                              <div role="tabpanel" tabindex="0" class="_cn-hot-city-title">
+                                <div class="_cn-hot-city-title-lk">夏季好去处</div>
+                              </div>
+                              <div class="_cn-hot-city-entity"  tabindex="-1"> 
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">深圳</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">南京</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">武汉</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">长沙</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">苏州</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">吉隆波</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false" class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">宁波</div>
+                                </button>
+                              </div>
+                              <div class="_cn-hot-city-entity tabindex="-1"">
+                                <button type="button"  aria-busy="false"  class="_cn-hot-eneity-btn">
+                                  <div class="_cn-hot-entity-lk">福州</div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>

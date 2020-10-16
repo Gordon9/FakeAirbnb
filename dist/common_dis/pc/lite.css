@@ -756,7 +756,111 @@ header {
   width: auto !important;
 }
 
-._fy_span-middle, ._fy_span-bottom {}
+/* search-bar-panel */
+
+._search-bar-panel {
+  position: absolute !important;
+  z-index: 9 !important;
+  padding-right: 40px !important;
+  padding-left: 40px !important;
+  top: 100% !important;
+  border: 1px solid rgb(235, 235, 235) !important;
+  border-radius: 0px 0px 3px 3px !important;
+  background: rgb(255, 255, 255) !important;
+  box-shadow: rgba(26, 26, 29, 0.3) 0px 15px 46px -10px !important;
+  display: none !important;
+  width: calc(100% - 100px) !important;
+}
+
+._search-bar-panel.show {
+  display: block !important;
+}
+
+._si-panel-title {
+  background: rgb(255, 255, 255) !important;
+  border: 0px !important;
+  outline: none !important;
+  overflow: auto !important;
+}
+
+._si-panel-title-lk {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.333333em !important;
+  color: rgb(118, 118, 118) !important;
+}
+
+._panel-horizontal-line {
+  height: 1px !important;
+  background: rgb(255, 255, 255) !important;
+}
+
+._panel-horizontal-line-lk {
+  height: 1px !important;
+  background: rgb(235, 235, 235) !important;
+}
+
+._panel-destination-wapper {
+  background: rgb(255, 255, 255) !important;
+  outline: none !important;
+  overflow: auto !important;
+}
+
+._panel-destination-outer {
+  display: table !important;
+  width: 100% !important;
+  table-layout: fixed !important;
+}
+
+._panel-destination-inner {
+  display: table-cell !important;
+  width: 33% !important;
+  padding-right: 8px !important;
+}
+
+._cn-hot-city-title {
+  outline: none !important;
+}
+
+._cn-hot-city-title-lk {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.375em !important;
+  color: rgb(72, 72, 72) !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+}
+
+._cn-hot-city-entity {
+  padding-top: 16px !important;
+  width: 72px !important;
+  float: left !important;
+  margin-left: -4px !important;
+  margin-right: -4px !important;
+}
+
+._cn-hot-eneity-btn {
+  background: transparent !important;
+  border: 0px !important;
+  display: inline-block !important;
+  text-align: left !important;
+  padding: 8px 4px !important;
+  border-radius: 3px !important;
+  outline: none !important;
+}
+
+._cn-hot-entity-lk {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.375em !important;
+  color: rgb(72, 72, 72) !important;
+}
 
 /* Smart Nav */
 
