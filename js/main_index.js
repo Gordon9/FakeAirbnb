@@ -239,17 +239,11 @@ function removeSearchInputPanel() {
 const cnCheckInOut = document.querySelector("._check-in-out");
 let myPicker = new SimplePicker(cnCheckInOut);
 
-// addEvent(cnCheckInOut, "click")
-
 addEvent(window, "click", (e) => {
-  e.stopPropagation();
-  e.preventDefault();
   if (cnCheckInOut.contains(e.target)) {
-    console.log("Clicked in box");
     cnCheckInOut.style.width = "52%";
     myPicker.open();
   } else {
-    console.log("Clicked outside the box");
     cnCheckInOut.style.width = "29%";
     myPicker.close();
   }
@@ -262,16 +256,3 @@ myPicker.on("submit", function (date, readableDate) {
 myPicker.on("close", function (date) {
   console.log("date:", date);
 });
-
-// let isShowCIOP;
-// addEvent(cnCheckInOut, "click", showCheckInOutPanel);
-// // addEvent(cnCheckInOut, "blur", removeCheckInoutPanel);
-
-// function showCheckInOutPanel() {
-
-//   console.log("showCIOPanel");
-// }
-
-// function removeCheckInoutPanel() {
-//   console.log("removeCIOPanel");
-// }
