@@ -268,7 +268,8 @@ const hotDesInner = document.querySelector("._box-hot-destination-cityinner");
 const hotDesButtons = document.querySelectorAll(
   "._box-hot-destination-cityitem"
 );
-console.log("hotDesButtons:", hotDesButtons);
+const hotDesFeeds = document.querySelectorAll("._hot-des-feed-lk-warpper");
+console.log("hotDesFeeds:", hotDesFeeds);
 
 addEvent(hotDesLeftArrow, "click", () => {
   hotDesArrowFunc("left");
@@ -287,6 +288,7 @@ for (let btn of hotDesButtons) {
 }
 
 function handleHotDesButton(e) {
+  // e.preventDefault();
   if (e.target.classList.contains("active")) {
     console.log("do nothing...");
     return;
@@ -297,6 +299,15 @@ function handleHotDesButton(e) {
     }
   }
   e.target.classList.add("active");
+  handleHotDesFeed(e);
+}
+
+function handleHotDesFeed(e) {
+  let curCity = e.target.innerText;
+  console.log("curCity:", curCity);
+  for (let feed of hotDesFeeds) {
+    feed.innerText = `${curCity}`;
+  }
 }
 
 function hotDesArrowFunc(direction) {
