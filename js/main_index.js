@@ -265,14 +265,39 @@ const hotDesRightArrow = document.querySelector(
   "._box-hot-destination-right-arrow-inner"
 );
 const hotDesInner = document.querySelector("._box-hot-destination-cityinner");
+const hotDesButtons = document.querySelectorAll(
+  "._box-hot-destination-cityitem"
+);
+console.log("hotDesButtons:", hotDesButtons);
 
 addEvent(hotDesLeftArrow, "click", () => {
   hotDesArrowFunc("left");
+  hotDesLeftArrow.classList.toggle("hide");
+  hotDesRightArrow.classList.toggle("hide");
 });
 
 addEvent(hotDesRightArrow, "click", () => {
   hotDesArrowFunc("right");
+  hotDesRightArrow.classList.toggle("hide");
+  hotDesLeftArrow.classList.toggle("hide");
 });
+
+for (let btn of hotDesButtons) {
+  addEvent(btn, "click", handleHotDesButton);
+}
+
+function handleHotDesButton(e) {
+  if (e.target.classList.contains("active")) {
+    console.log("do nothing...");
+    return;
+  }
+  for (let btn of hotDesButtons) {
+    if (btn.classList.contains("active")) {
+      btn.classList.remove("active");
+    }
+  }
+  e.target.classList.add("active");
+}
 
 function hotDesArrowFunc(direction) {
   let transX = document.defaultView
@@ -280,12 +305,12 @@ function hotDesArrowFunc(direction) {
     .transform.split(",")[4];
 
   if (direction === "left") {
-    transX -= 136;
-    console.log("transXleft:", transX);
-  } else if (direction === "right") {
     transX = Number(transX);
     transX += 136;
     console.log("transXright:", transX);
+  } else if (direction === "right") {
+    transX -= 136;
+    console.log("transXleft:", transX);
   }
   hotDesInner.style.transform = `translateX(${parseFloat(transX)}px)`;
 }

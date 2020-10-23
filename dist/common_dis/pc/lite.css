@@ -950,14 +950,6 @@ header {
   background: linear-gradient(270deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 17%, rgba(255, 255, 255, 0) 100%) !important;
 }
 
-._box-hot-destination-right-arrow {
-  position: absolute !important;
-  margin-top: -48px !important;
-  height: 48px !important;
-  padding-top: 10px !important;
-  right: 12px !important;
-}
-
 ._box-hot-destination-right-arrow-inner {
   display: inline-block !important;
   cursor: pointer !important;
@@ -1013,6 +1005,18 @@ header {
   padding-top: 10px !important;
   left: 12px !important;
   /* display: none !important; */
+}
+
+._box-hot-destination-right-arrow {
+  position: absolute !important;
+  margin-top: -48px !important;
+  height: 48px !important;
+  padding-top: 10px !important;
+  right: 12px !important;
+}
+
+._box-hot-destination-left-arrow-inner.hide, ._box-hot-destination-right-arrow-inner.hide {
+  display: none !important;
 }
 
 /* Smart Nav */
