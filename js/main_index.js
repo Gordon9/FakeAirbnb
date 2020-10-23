@@ -256,3 +256,36 @@ myPicker.on("submit", function (date, readableDate) {
 myPicker.on("close", function (date) {
   console.log("date:", date);
 });
+
+// Hot Destination
+const hotDesLeftArrow = document.querySelector(
+  "._box-hot-destination-left-arrow-inner"
+);
+const hotDesRightArrow = document.querySelector(
+  "._box-hot-destination-right-arrow-inner"
+);
+const hotDesInner = document.querySelector("._box-hot-destination-cityinner");
+
+addEvent(hotDesLeftArrow, "click", () => {
+  hotDesArrowFunc("left");
+});
+
+addEvent(hotDesRightArrow, "click", () => {
+  hotDesArrowFunc("right");
+});
+
+function hotDesArrowFunc(direction) {
+  let transX = document.defaultView
+    .getComputedStyle(hotDesInner, null)
+    .transform.split(",")[4];
+
+  if (direction === "left") {
+    transX -= 136;
+    console.log("transXleft:", transX);
+  } else if (direction === "right") {
+    transX = Number(transX);
+    transX += 136;
+    console.log("transXright:", transX);
+  }
+  hotDesInner.style.transform = `translateX(${parseFloat(transX)}px)`;
+}

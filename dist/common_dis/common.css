@@ -37,6 +37,10 @@ button {
   font-size: 100%;
 }
 
+button:focus {
+  outline: 0 !important;
+}
+
 input {
   line-height: normal;
 }
