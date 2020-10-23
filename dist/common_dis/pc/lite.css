@@ -899,7 +899,7 @@ header {
   font-weight: 600 !important;
   margin-bottom: 0px !important;
   font-size: 22px !important;
-  line-height: 26% !important;
+  line-height: 26px !important;
 }
 
 ._box-hot-destination-cityouter {
@@ -1019,6 +1019,61 @@ header {
   display: none !important;
 }
 
+/* Hot Destination Feed Content */
+
+._hot-des-feed-wrapper {
+  position: relative !important;
+  z-index: 0 !important;
+}
+
+._hot-des-feed-box {
+  margin-top: 0px !important;
+  margin-left: 24px !important;
+  margin-right: 24px;
+  overflow-y: hidden !important;
+}
+
+._hot-des-feed-wrapper-inner {
+  padding: 0px 18px 30px !important;
+  transition: transform 0.5s ease 0s !important;
+  white-space: nowrap !important;
+  overflow-x: auto !important;
+  margin-bottom: -30px !important;
+}
+
+._hot-des-feed-lk-warpper {
+  display: inline-block !important;
+  vertical-align: top !important;
+  white-space: nowrap !important;
+  width: 100px !important;
+  min-height: 348px !important;
+  /* min-width: 100px !important; */
+}
+
+._hot-des-feed-lk-warpper:nth-child(1) {
+  background: #fad0c4;
+}
+
+._hot-des-feed-lk-warpper:nth-child(2) {
+  background: #fbc2eb;
+}
+
+._hot-des-feed-lk-warpper:nth-child(3) {
+  background: #ffd1ff;
+}
+
+._hot-des-feed-lk-warpper:nth-child(4) {
+  background: #fda085;
+}
+
+._hot-des-feed-lk-warpper:nth-child(5) {
+  background: #96e6a1;
+}
+
+._hot-des-feed-lk-warpper:nth-child(6) {
+  background: #e2ebf0;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
@@ -1129,6 +1184,22 @@ header {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
   }
+  ._hot-des-feed-box {
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+    overflow: hidden !important;
+  }
+  ._hot-des-feed-wrapper-inner {
+    margin-bottom: 0px !important;
+    padding: 0px !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    margin-top: 0px !important;
+  }
+  ._hot-des-feed-lk-warpper {
+    /* width: 50% !important; */
+    width: 49.5% !important;
+  }
 }
 
 @media (min-width: 1128px) {
@@ -1152,6 +1223,9 @@ header {
   /* Main ContentBox */
   ._box-hot-destination-hd-outer {
     width: 50% !important;
+  }
+  ._hot-des-feed-lk-warpper {
+    width: 33% !important;
   }
 }
 
