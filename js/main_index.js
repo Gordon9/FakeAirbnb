@@ -283,23 +283,23 @@ addEvent(hotDesRightArrow, "click", () => {
   hotDesLeftArrow.classList.toggle("hide");
 });
 
-for (let btn of hotDesButtons) {
-  addEvent(btn, "click", handleHotDesButton);
-}
+// for (let btn of hotDesButtons) {
+//   addEvent(btn, "click", handleHotDesButton);
+// }
 
-function handleHotDesButton(e) {
-  if (e.target.classList.contains("active")) {
-    console.log("do nothing...");
-    return;
-  }
-  for (let btn of hotDesButtons) {
-    if (btn.classList.contains("active")) {
-      btn.classList.remove("active");
-    }
-  }
-  e.target.classList.add("active");
-  // handleHotDesFeed(e);
-}
+// function handleHotDesButton(e) {
+//   if (e.target.classList.contains("active")) {
+//     console.log("do nothing...");
+//     return;
+//   }
+//   for (let btn of hotDesButtons) {
+//     if (btn.classList.contains("active")) {
+//       btn.classList.remove("active");
+//     }
+//   }
+//   e.target.classList.add("active");
+//   // handleHotDesFeed(e);
+// }
 
 // function handleHotDesFeed(e) {
 //   // console.log("e:", e);
