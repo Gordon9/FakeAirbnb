@@ -269,7 +269,7 @@ const hotDesButtons = document.querySelectorAll(
   "._box-hot-destination-cityitem"
 );
 const hotDesFeeds = document.querySelectorAll("._hot-des-feed-lk-warpper");
-console.log("hotDesFeeds:", hotDesFeeds);
+// console.log("hotDesFeeds:", hotDesFeeds);
 
 addEvent(hotDesLeftArrow, "click", () => {
   hotDesArrowFunc("left");
