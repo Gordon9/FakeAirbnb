@@ -1045,7 +1045,7 @@ header {
   display: inline-block !important;
   vertical-align: top !important;
   white-space: nowrap !important;
-  width: 100px !important;
+  width: 100% !important;
   min-height: 348px !important;
   /* min-width: 100px !important; */
 }
@@ -1228,6 +1228,16 @@ header {
   background-position: left center !important;
 }
 
+._hot-des-rooms-badges-lk-four-half {
+  height: 9px !important;
+  width: 50px !important;
+  display: inline-block !important;
+  background-size: auto 9px !important;
+  background-repeat: no-repeat !important;
+  background-image: url(https://z1.muscache.cn/airbnb/static/packages/star_half_2x.bff5c1ff.png);
+  background-position: left center !important;
+}
+
 ._hot-des-rooms-badges-num {
   display: inline-block !important;
   font-weight: 600 !important;
@@ -1239,7 +1249,7 @@ header {
   margin-left: 2px !important;
 }
 
-._hot-des-feed-lk-warpper:nth-child(1) {
+/* ._hot-des-feed-lk-warpper:nth-child(1) {
   background: #fad0c4;
 }
 
@@ -1261,7 +1271,7 @@ header {
 
 ._hot-des-feed-lk-warpper:nth-child(6) {
   background: #e2ebf0;
-}
+} */
 
 /* Smart Nav */
 
