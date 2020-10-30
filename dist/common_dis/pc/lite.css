@@ -1050,6 +1050,195 @@ header {
   /* min-width: 100px !important; */
 }
 
+._hot-des-rooms-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+._hot-des-rooms-outer {
+  position: relative !important;
+  color: #484848 !important;
+  height: 100% !important;
+}
+
+._hot-des-rooms-img-outer {
+  width: 100% !important;
+  position: relative !important;
+  z-index: 0 !important;
+}
+
+._hot-des-rooms-img-inner {
+  position: relative !important;
+}
+
+._hot-des-rooms-img-box {
+  contain: strict !important;
+  position: relative !important;
+  width: 100% !important;
+  z-index: 0 !important;
+  border-bottom-left-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+  overflow: hidden !important;
+}
+
+._hot-des-rooms-img-lk {
+  position: absolute !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+._hot-des-rooms-img-lk-link {
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+
+._hot-des-rooms-img-lk-link-inner {
+  height: 100% !important;
+  width: 100% !important;
+  position: static !important;
+}
+
+._hot-des-rooms-intro-outer {
+  padding-top: 8px !important;
+}
+
+._hot-des-rooms-intro-box {
+  display: block !important;
+  text-decoration: none !important;
+  color: #484848 !important;
+}
+
+._hot-des-rooms-intro-head {
+  height: 16px !important;
+  max-height: 16px !important;
+  margin-bottom: 2px !important;
+  text-transform: uppercase !important;
+}
+
+._hot-des-rooms-intro-head-outer {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+._hot-des-rooms-intro-head-inner {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  vertical-align: middle !important;
+  font-size: 12px !important;
+  line-height: 1.33333em !important;
+  font-weight: 800 !important;
+}
+
+._hot-des-rooms-intro-content {
+  line-height: 22px !important;
+  max-height: 44px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+}
+
+._hot-des-rooms-intro-content-lk {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  vertical-align: middle !important;
+  font-size: 16px !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  line-height: 1.375em !important;
+  font-weight: 800 !important;
+}
+
+._hot-des-rooms_price-parent {
+  height: 20px !important;
+}
+
+._hot-des-rooms_price_wrapper {
+  float: left !important;
+}
+
+._hot-des-rooms_price_outer {
+  line-height: normal !important;
+}
+
+._hot-des-rooms_price_inter {
+  white-space: nowrap !important;
+}
+
+._hot-des-rooms_price-box {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  vertical-align: middle !important;
+  font-size: 14px !important;
+  line-height: 1.28571em !important;
+  font-weight: 400 !important;
+}
+
+._hot-des-rooms_price-lk {
+  border: 0px !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(100%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0px !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+._hot-des-rooms-evaluate {
+  line-height: normal !important;
+  max-height: 22px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+}
+
+._hot-des-rooms-badges-wrap {
+  display: inline-block !important;
+}
+
+._hot-des-room-host-wrap {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  vertical-align: middle !important;
+  font-size: 12px !important;
+  line-height: 1.33333em !important;
+  font-weight: 600 !important;
+}
+
+._hot-des-rooms-badges-lk {
+  height: 9px !important;
+  width: 50px !important;
+  display: inline-block !important;
+  background-size: auto 9px !important;
+  background-repeat: no-repeat !important;
+  background-image: url(https://z1.muscache.cn/airbnb/static/packages/star_2x.75f8074a.png);
+  background-position: left center !important;
+}
+
+._hot-des-rooms-badges-num {
+  display: inline-block !important;
+  font-weight: 600 !important;
+  color: #484848 !important;
+  font-size: 12px !important;
+  line-height: 22px !important;
+  height: 22px !important;
+  margin: 0px !important;
+  margin-left: 2px !important;
+}
+
 ._hot-des-feed-lk-warpper:nth-child(1) {
   background: #fad0c4;
 }
@@ -1200,6 +1389,10 @@ header {
     /* width: 50% !important; */
     width: 49.5% !important;
   }
+  ._hot-des-rooms-wrapper {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
 }
 
 @media (min-width: 1128px) {
@@ -1226,6 +1419,10 @@ header {
   }
   ._hot-des-feed-lk-warpper {
     width: 33% !important;
+  }
+  /* Hot Des Feeds */
+  ._hot-des-rooms-wrapper {
+    padding-bottom: 12px !important;
   }
 }
 

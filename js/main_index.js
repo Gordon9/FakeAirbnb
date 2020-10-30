@@ -288,7 +288,6 @@ for (let btn of hotDesButtons) {
 }
 
 function handleHotDesButton(e) {
-  // e.preventDefault();
   if (e.target.classList.contains("active")) {
     console.log("do nothing...");
     return;
@@ -299,16 +298,24 @@ function handleHotDesButton(e) {
     }
   }
   e.target.classList.add("active");
-  handleHotDesFeed(e);
+  // handleHotDesFeed(e);
 }
 
-function handleHotDesFeed(e) {
-  let curCity = e.target.innerText;
-  console.log("curCity:", curCity);
-  for (let feed of hotDesFeeds) {
-    feed.innerText = `${curCity}`;
-  }
-}
+// function handleHotDesFeed(e) {
+//   // console.log("e:", e);
+//   let curCity;
+//   if (e === null) {
+//     curCity = "上海";
+//   } else {
+//     curCity = e.target.innerText;
+//   }
+//   console.log("curCity:", curCity);
+//   for (let feed of hotDesFeeds) {
+//     feed.innerText = `${curCity}`;
+//   }
+// }
+
+// handleHotDesFeed((e = null));
 
 function hotDesArrowFunc(direction) {
   let transX = document.defaultView
