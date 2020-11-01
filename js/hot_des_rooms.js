@@ -15,7 +15,7 @@ const App = () => {
   const hotDesButtons = document.querySelectorAll(
     "._box-hot-destination-cityitem"
   );
-  console.log("hotDesButtons:", hotDesButtons);
+  // console.log("hotDesButtons:", hotDesButtons);
 
   let roomsArr = [];
   let query = "chicken";
@@ -26,7 +26,7 @@ const App = () => {
     );
     const data = await response.json();
     roomsArr = data.hits;
-    console.log("roomsArr:", roomsArr);
+    // console.log("roomsArr:", roomsArr);
 
     renderRoomsUrl();
     renderRoomsLabel();

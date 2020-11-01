@@ -273,50 +273,13 @@ const hotDesFeeds = document.querySelectorAll("._hot-des-feed-lk-warpper");
 
 addEvent(hotDesLeftArrow, "click", () => {
   hotDesArrowFunc("left");
-  hotDesLeftArrow.classList.toggle("hide");
-  hotDesRightArrow.classList.toggle("hide");
 });
 
 addEvent(hotDesRightArrow, "click", () => {
   hotDesArrowFunc("right");
-  hotDesRightArrow.classList.toggle("hide");
-  hotDesLeftArrow.classList.toggle("hide");
 });
 
-// for (let btn of hotDesButtons) {
-//   addEvent(btn, "click", handleHotDesButton);
-// }
-
-// function handleHotDesButton(e) {
-//   if (e.target.classList.contains("active")) {
-//     console.log("do nothing...");
-//     return;
-//   }
-//   for (let btn of hotDesButtons) {
-//     if (btn.classList.contains("active")) {
-//       btn.classList.remove("active");
-//     }
-//   }
-//   e.target.classList.add("active");
-//   // handleHotDesFeed(e);
-// }
-
-// function handleHotDesFeed(e) {
-//   // console.log("e:", e);
-//   let curCity;
-//   if (e === null) {
-//     curCity = "上海";
-//   } else {
-//     curCity = e.target.innerText;
-//   }
-//   console.log("curCity:", curCity);
-//   for (let feed of hotDesFeeds) {
-//     feed.innerText = `${curCity}`;
-//   }
-// }
-
-// handleHotDesFeed((e = null));
-
+hotDesArrowFunc();
 function hotDesArrowFunc(direction) {
   let transX = document.defaultView
     .getComputedStyle(hotDesInner, null)
@@ -325,10 +288,22 @@ function hotDesArrowFunc(direction) {
   if (direction === "left") {
     transX = Number(transX);
     transX += 136;
-    console.log("transXright:", transX);
   } else if (direction === "right") {
     transX -= 136;
-    console.log("transXleft:", transX);
   }
+
+  if (Number(transX) === 0) {
+    hotDesLeftArrow.classList.add("hide");
+  } else {
+    hotDesLeftArrow.classList.remove("hide");
+  }
+
+  if (Number(transX) === -544) {
+    hotDesRightArrow.classList.add("hide");
+  } else {
+    hotDesRightArrow.classList.remove("hide");
+  }
+  console.log("transX:", transX);
+
   hotDesInner.style.transform = `translateX(${parseFloat(transX)}px)`;
 }
