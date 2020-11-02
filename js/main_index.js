@@ -268,7 +268,7 @@ const hotDesInner = document.querySelector("._box-hot-destination-cityinner");
 const hotDesButtons = document.querySelectorAll(
   "._box-hot-destination-cityitem"
 );
-const hotDesFeeds = document.querySelectorAll("._hot-des-feed-lk-warpper");
+const hotDesFeeds = document.querySelectorAll("._hot-des-feed-lk-wrapper");
 // console.log("hotDesFeeds:", hotDesFeeds);
 
 addEvent(hotDesLeftArrow, "click", () => {
