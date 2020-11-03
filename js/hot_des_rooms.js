@@ -15,7 +15,13 @@ const App = () => {
   const hotDesButtons = document.querySelectorAll(
     "._box-hot-destination-cityitem"
   );
-  // console.log("hotDesButtons:", hotDesButtons);
+  const hotDesReadMore = document.querySelector(
+    "._hot-des-read-more-container a"
+  );
+  const hotDesReadMorePhone = document.querySelector(
+    "._hot-des-read-more-container-phone-lk"
+  );
+  console.log("hotDesReadMorePhone:", hotDesReadMorePhone);
 
   let roomsArr = [];
   let query = "chicken";
@@ -58,6 +64,7 @@ const App = () => {
   };
 
   getRecipes();
+  handleHotDesReadMore((e = null));
 
   const listenHotDes = () => {
     for (let btn of hotDesButtons) {
@@ -70,8 +77,24 @@ const App = () => {
       }
       handleHotDesBtn(e);
       handleHotDesFeed(e);
+      handleHotDesReadMore(e);
     }
   };
+
+  function handleHotDesReadMore(e) {
+    let rArrow =
+      '<div style="display:inline;position:relative;padding-left:6px"><svg viewBox="0 0 18 18" role="img" aria-hidden="false" aria-label="see all" focusable="false" style="height:10px;width:10px;fill:currentColor"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg></div>';
+
+    if (e === null) {
+      hotDesReadMore.innerHTML = `查看更多上海房源` + rArrow;
+      hotDesReadMorePhone.innerText = `查看更多上海房源`;
+      return;
+    }
+
+    let curCity = e.target.innerText;
+    hotDesReadMore.innerHTML = `查看更多${curCity}房源` + rArrow;
+    hotDesReadMorePhone.innerText = `查看更多${curCity}房源`;
+  }
 
   function handleHotDesBtn(e) {
     for (let btn of hotDesButtons) {

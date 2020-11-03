@@ -1271,6 +1271,10 @@ header {
   display: none !important;
 }
 
+._hot-des-read-more-container a:hover {
+  text-decoration: underline !important;
+}
+
 ._hot-des-read-more-container-phone {
   display: block !important;
 }
