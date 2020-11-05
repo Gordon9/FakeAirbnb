@@ -7,10 +7,10 @@ const App2 = () => {
     "._autumn-discount-rooms-img-link"
   );
   const roomsLabel = document.querySelectorAll(
-    "._hot-des-rooms-intro-content-lk"
+    "._autumn-discount-rooms-intro-content-lk"
   );
   const roomsPrice = document.querySelectorAll(
-    "._hot-des-rooms_price-box ._hot-des-rooms_price-box span:nth-child(2)"
+    "._autumn-discount-rooms-price-box ._autumn-discount-rooms-price-box span:nth-child(2)"
   );
   const hotDesButtons = document.querySelectorAll("._autumn-discount-cityitem");
 

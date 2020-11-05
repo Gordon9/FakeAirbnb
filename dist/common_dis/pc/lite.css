@@ -1246,6 +1246,16 @@ header {
   font-weight: 800 !important;
 }
 
+._autumn-discount-rooms-intro-content-lk {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  vertical-align: middle !important;
+  font-size: 16px !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  line-height: 1.375em !important;
+  font-weight: 800 !important;
+}
+
 ._hot-des-rooms_price-parent {
   height: 20px !important;
 }
@@ -1263,6 +1273,15 @@ header {
 }
 
 ._hot-des-rooms_price-box {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  vertical-align: middle !important;
+  font-size: 14px !important;
+  line-height: 1.28571em !important;
+  font-weight: 400 !important;
+}
+
+._autumn-discount-rooms-price-box {
   margin: 0px !important;
   word-wrap: break-word !important;
   vertical-align: middle !important;
