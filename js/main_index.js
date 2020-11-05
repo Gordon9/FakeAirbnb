@@ -307,3 +307,7 @@ function hotDesArrowFunc(direction) {
 
   hotDesInner.style.transform = `translateX(${parseFloat(transX)}px)`;
 }
+
+
+// Autumn Discount Rooms
+// const 

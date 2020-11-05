@@ -1,4 +1,4 @@
-const App = () => {
+const App2 = () => {
   const APP_ID = "e0b982c7";
   const APP_KEY = "2ab29d71baf4e2bccdd82bec22e9955d";
   // const requestUrl = `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
@@ -12,15 +12,75 @@ const App = () => {
   const roomsPrice = document.querySelectorAll(
     "._hot-des-rooms_price-box ._hot-des-rooms_price-box span:nth-child(2)"
   );
-  const hotDesButtons = document.querySelectorAll(
-    "._box-hot-destination-cityitem"
+  const hotDesButtons = document.querySelectorAll("._autumn-discount-cityitem");
+
+  const autumnDisCountButtons = document.querySelectorAll(
+    "._autumn-discount-cityitem"
   );
+  console.log("autumnDisCountButtons:", autumnDisCountButtons);
+
   const hotDesReadMore = document.querySelector(
-    "._hot-des-read-more-container a"
+    "._autumn-discount-read-more-container a"
   );
   const hotDesReadMorePhone = document.querySelector(
-    "._hot-des-read-more-container-phone-lk"
+    "._autumn-discount-read-more-container-phone-lk"
   );
+  // console.log("hotDesReadMorePhone:", hotDesReadMorePhone);
+
+  const autumnDiscountRoomsInner = document.querySelector(
+    "._autumn-discount-roomsinner"
+  );
+
+  const autumnDiscountLeftArrow = document.querySelector(
+    "._box-autumn-discount-left-arrow-inner"
+  );
+  const autumnDiscountRightArrow = document.querySelector(
+    "._box-autumn-discount-right-arrow-inner"
+  );
+
+  let transX = document.defaultView
+    .getComputedStyle(hotDesInner, null)
+    .transform.split(",")[4];
+
+  addEvent(autumnDiscountLeftArrow, "click", () => {
+    autumnDiscountArrowFunc("left");
+  });
+
+  addEvent(autumnDiscountRightArrow, "click", () => {
+    autumnDiscountArrowFunc("right");
+  });
+
+  autumnDiscountArrowFunc();
+
+  function autumnDiscountArrowFunc(direction) {
+    // let transX = document.defaultView
+    //   .getComputedStyle(hotDesInner, null)
+    //   .transform.split(",")[4];
+
+    if (direction === "left") {
+      transX = Number(transX);
+      transX += 136;
+    } else if (direction === "right") {
+      transX -= 136;
+    }
+
+    if (Number(transX) === 0) {
+      autumnDiscountLeftArrow.classList.add("hide");
+    } else {
+      autumnDiscountLeftArrow.classList.remove("hide");
+    }
+
+    if (Number(transX) === -544) {
+      autumnDiscountRightArrow.classList.add("hide");
+    } else {
+      autumnDiscountRightArrow.classList.remove("hide");
+    }
+    console.log("transX:", transX);
+
+    autumnDiscountRoomsInner.style.transform = `translateX(${parseFloat(
+      transX
+    )}px)`;
+  }
 
   let roomsArr = [];
   let query = "chicken";
@@ -63,10 +123,11 @@ const App = () => {
   };
 
   getRecipes();
-  handleHotDesReadMore((e = null));
+  // handleHotDesReadMore((e = null));
+  handleAutumnDiscountReadMore((e = null));
 
   const listenHotDes = () => {
-    for (let btn of hotDesButtons) {
+    for (let btn of autumnDisCountButtons) {
       addEvent(btn, "click", handleHotDes);
     }
 
@@ -76,17 +137,18 @@ const App = () => {
       }
       handleHotDesBtn(e);
       handleHotDesFeed(e);
-      handleHotDesReadMore(e);
+      // handleHotDesReadMore(e);
+      handleAutumnDiscountReadMore(e);
     }
   };
 
-  function handleHotDesReadMore(e) {
+  function handleAutumnDiscountReadMore(e) {
     let rArrow =
       '<div style="display:inline;position:relative;padding-left:6px"><svg viewBox="0 0 18 18" role="img" aria-hidden="false" aria-label="see all" focusable="false" style="height:10px;width:10px;fill:currentColor"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg></div>';
 
     if (e === null) {
-      hotDesReadMore.innerHTML = `查看更多上海房源` + rArrow;
-      hotDesReadMorePhone.innerText = `查看更多上海房源`;
+      hotDesReadMore.innerHTML = `查看更多杭州房源` + rArrow;
+      hotDesReadMorePhone.innerText = `查看更多杭州房源`;
       return;
     }
 
@@ -96,7 +158,7 @@ const App = () => {
   }
 
   function handleHotDesBtn(e) {
-    for (let btn of hotDesButtons) {
+    for (let btn of autumnDisCountButtons) {
       if (btn.classList.contains("active")) {
         btn.classList.remove("active");
       }
@@ -146,4 +208,4 @@ const App = () => {
   listenHotDes();
 };
 
-App();
+App2();
