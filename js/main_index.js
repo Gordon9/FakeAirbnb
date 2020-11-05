@@ -303,7 +303,7 @@ function hotDesArrowFunc(direction) {
   } else {
     hotDesRightArrow.classList.remove("hide");
   }
-  console.log("transX:", transX);
+  // console.log("transX:", transX);
 
   hotDesInner.style.transform = `translateX(${parseFloat(transX)}px)`;
 }

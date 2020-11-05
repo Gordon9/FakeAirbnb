@@ -133,7 +133,7 @@ const App = () => {
         query = "grapes";
         break;
     }
-    // getRecipes();
+    getRecipes();
   };
 
   function addEvent(el, event, callback) {

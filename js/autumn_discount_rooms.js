@@ -4,7 +4,7 @@ const App2 = () => {
   // const requestUrl = `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   const roomsUrl = document.querySelectorAll(
-    "._hot-des-rooms-img-lk-link-inner"
+    "._autumn-discount-rooms-img-link"
   );
   const roomsLabel = document.querySelectorAll(
     "._hot-des-rooms-intro-content-lk"
@@ -17,7 +17,7 @@ const App2 = () => {
   const autumnDisCountButtons = document.querySelectorAll(
     "._autumn-discount-cityitem"
   );
-  console.log("autumnDisCountButtons:", autumnDisCountButtons);
+  // console.log("autumnDisCountButtons:", autumnDisCountButtons);
 
   const hotDesReadMore = document.querySelector(
     "._autumn-discount-read-more-container a"
@@ -25,7 +25,6 @@ const App2 = () => {
   const hotDesReadMorePhone = document.querySelector(
     "._autumn-discount-read-more-container-phone-lk"
   );
-  // console.log("hotDesReadMorePhone:", hotDesReadMorePhone);
 
   const autumnDiscountRoomsInner = document.querySelector(
     "._autumn-discount-roomsinner"
@@ -75,7 +74,7 @@ const App2 = () => {
     } else {
       autumnDiscountRightArrow.classList.remove("hide");
     }
-    console.log("transX:", transX);
+    // console.log("transX:", transX);
 
     autumnDiscountRoomsInner.style.transform = `translateX(${parseFloat(
       transX
@@ -83,7 +82,13 @@ const App2 = () => {
   }
 
   let roomsArr = [];
-  let query = "chicken";
+  let query = "orange";
+  // let query = "pear";
+  // let query = " strawberries";
+  // let query = " passionfruit";
+  // let query = " plums";
+  // let query = " Tomatoes";
+  // let query = " limes";
 
   const getRecipes = async () => {
     const response = await fetch(
@@ -128,15 +133,15 @@ const App2 = () => {
 
   const listenHotDes = () => {
     for (let btn of autumnDisCountButtons) {
-      addEvent(btn, "click", handleHotDes);
+      addEvent(btn, "click", handleAutmumnDiscount);
     }
 
-    function handleHotDes(e) {
+    function handleAutmumnDiscount(e) {
       if (e.target.classList.contains("active")) {
         return;
       }
       handleHotDesBtn(e);
-      handleHotDesFeed(e);
+      handleAutumnDiscountBtn(e);
       // handleHotDesReadMore(e);
       handleAutumnDiscountReadMore(e);
     }
@@ -166,36 +171,37 @@ const App2 = () => {
     e.target.classList.add("active");
   }
 
-  const handleHotDesFeed = (e) => {
+  const handleAutumnDiscountBtn = (e) => {
     // console.log("e:", e.target.innerText);
     let hotCity = e.target.innerText;
+    console.log("hotCity:", hotCity);
     switch (hotCity) {
       case "上海":
         query = "chicken";
         break;
-      case "北京":
-        query = "banana";
+      case "嘉兴":
+        query = "pear";
         break;
       case "杭州":
         query = "orange";
         break;
-      case "大理":
-        query = "lemon";
+      case "苏州":
+        query = "strawberries";
         break;
-      case "大阪":
-        query = "avocado";
+      case "南京":
+        query = "passionfruit";
         break;
-      case "曼谷":
-        query = "cherries";
+      case "成都":
+        query = "plums";
         break;
-      case "台北":
-        query = "durian";
+      case "湖州":
+        query = "Tomatoes";
         break;
-      case "洛杉矶":
-        query = "grapes";
+      case "厦门":
+        query = "limes";
         break;
     }
-    // getRecipes();
+    getRecipes();
   };
 
   function addEvent(el, event, callback) {
