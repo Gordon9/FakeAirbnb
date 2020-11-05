@@ -1194,6 +1194,12 @@ header {
   position: static !important;
 }
 
+._autumn-discount-rooms-img-link {
+  height: 100% !important;
+  width: 100% !important;
+  position: static !important;
+}
+
 ._hot-des-rooms-intro-outer {
   padding-top: 8px !important;
 }
