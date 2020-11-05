@@ -7,6 +7,7 @@
 body {
   /* background-color: #ccc !important; */
   background-color: #ffffff !important;
+  height: 200vh !important;
 }
 
 header {
@@ -1382,23 +1383,6 @@ _autumn-discount-read-more-container {
   display: block !important;
 }
 
-/* :root {
-  --border-button-small-border-radius: 4px;
-  --font-button-small-font-size: 14px;
-  --font-button-small-line-height: 22px;
-  --font-button-small-letter-spacing: normal;
-  --font-button-small-font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC";
-  --font-button-small-text-transform: undefined;
-  --spacing-button-small-vertical: 6px;
-  --font-book-font-weight: 600;
-  --border-button-small-border-width: 1px;
-  --spacing-button-small-horizontal: 15px;
-  --shadow-button-level0-box-shodow: none;
-  --color-buttons-secondary-color: transparent;
-  --color-buttons-secondary-border: #008489;
-  --color-buttons-secondary-text: #008489;
-} */
-
 ._hot-des-read-more-container-phone-outer {
   display: inline-block !important;
   margin: 0px !important;
@@ -1432,6 +1416,149 @@ _autumn-discount-read-more-container {
 
 ._hot-des-read-more-container-phone-lk {
   color: inherit !important;
+}
+
+/* Innhome-Service */
+
+._innhome-box {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+._innhome-box-title-wrap {
+  color: #222222 !important;
+  display: flex !important;
+}
+
+._innhome-box-title-outer {
+  -webkit-box-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+._innhome-box-title-inner {
+  color: #222222 !important;
+  font-family: Cereal, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+  margin-bottom: 8px !important;
+}
+
+._innhome-box-title-lk {
+  font-weight: 600 !important;
+  margin-bottom: 0px !important;
+  font-size: 22px !important;
+  line-height: 26px !important;
+}
+
+._innhome-box-content-wrap {
+  padding-top: 8px !important;
+}
+
+._innhome-box-content-img-outer {
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+  height: 50px !important;
+}
+
+._innhome-box-content-img-outer:hover {
+  cursor: pointer !important;
+}
+
+._innhome-box-content-img-inner {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  min-height: 1px !important;
+  position: relative !important;
+  width: 100% !important;
+  float: left !important;
+}
+
+._innhome-box-content-img-lk {
+  height: 50% !important;
+}
+
+._innhome-box-content-guarantee-room {
+  display: table-cell !important;
+  height: 50px !important;
+  margin-right: 16px !important;
+}
+
+._innhome-box-content-guarantee-room-lk {
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+
+._innhome-box-content-guarantee-room-img {
+  height: 100% !important;
+  /* width: 100% !important; */
+  position: static !important;
+}
+
+._innhome-box-content-guarantee-content {
+  display: table-cell !important;
+  padding-left: 8px !important;
+  padding-right: 24px !important;
+  vertical-align: middle !important;
+}
+
+._innhome-box-content-guarantee-content-title {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.28571em !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._innhome-box-content-guarantee-content-title-lk {
+  line-height: 24px !important;
+}
+
+._innhome-box-content-guarantee-content-details {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.28571em !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._innhome-box-content-guarantee-content-details-lk {
+  line-height: 24px !important;
+}
+
+._innhome-box-content-link-outer {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  margin-top: 24px !important;
+}
+
+._innhome-box-content-link-lk {
+  color: rgb(0, 132, 137) !important;
+  color: #008489 !important;
+  font-style: inherit !important;
+  font-variant: inherit !important;
+  font-weight: inherit !important;
+  font-stretch: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  text-decoration: none !important;
+  appearance: none !important;
+  background: transparent !important;
+  border: 0px !important;
+  cursor: pointer !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  user-select: none !important;
+  text-align: left !important;
+}
+
+._innhome-box-content-link-lk:hover {
+  text-decoration: underline !important;
 }
 
 /* ._hot-des-feed-lk-wrapper:nth-child(1) {
@@ -1605,6 +1732,18 @@ _autumn-discount-read-more-container {
   ._autumn-discount-read-more-container-phone {
     display: none !important;
   }
+  /* InnerHome-Service */
+  ._innhome-box {
+    margin-top: 60px !important;
+    margin-bottom: 40px !important;
+  }
+  ._innhome-box-content-img-inner {
+    width: 33.3333% !important;
+    float: left !important;
+  }
+  ._innhome-box-content-img-lk {
+    vertical-align: middle !important;
+  }
 }
 
 @media (min-width: 1128px) {
@@ -1635,6 +1774,10 @@ _autumn-discount-read-more-container {
   /* Hot Des Feeds */
   ._hot-des-rooms-wrapper {
     padding-bottom: 12px !important;
+  }
+  /* INNHOME-SERVICE */
+  ._innhome-box-title-wrap {
+    width: 50% !important;
   }
 }
 

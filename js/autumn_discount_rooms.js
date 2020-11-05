@@ -174,7 +174,6 @@ const App2 = () => {
   const handleAutumnDiscountBtn = (e) => {
     // console.log("e:", e.target.innerText);
     let hotCity = e.target.innerText;
-    console.log("hotCity:", hotCity);
     switch (hotCity) {
       case "上海":
         query = "chicken";
