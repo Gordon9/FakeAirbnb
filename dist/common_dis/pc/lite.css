@@ -1572,8 +1572,8 @@ _autumn-discount-read-more-container {
   left: 0px !important;
   overflow-y: auto !important;
   background: rgba(255, 255, 255, 0.8) !important;
+  display: none !important;
   display: block !important;
-  /* display: block !important; */
 }
 
 ._bodyconstraint.hide {
@@ -1590,6 +1590,11 @@ _autumn-discount-read-more-container {
   display: table-cell !important;
   vertical-align: middle !important;
   padding: 64px !important;
+  /* display: block !important; */
+}
+
+._bodyconstraint-outer.hide {
+  /* display: none !important; */
 }
 
 ._bodyconstraint-inner {

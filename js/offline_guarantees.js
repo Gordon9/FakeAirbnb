@@ -5,12 +5,12 @@ const startOfflineGuarantees = () => {
   const guaranteesCancelBtn = document.querySelector(
     "._modal-offline-guarantees-inner-btn"
   );
-  // console.log("guaranteesCancelBtn:", guaranteesCancelBtn);
 
   const removeGuaranteesPanel = () => {
     guaranteesBody.classList.add("hide");
   };
 
+  addEvent(guaranteesBody, "click", removeGuaranteesPanel);
   addEvent(guaranteesCancelBtn, "click", removeGuaranteesPanel);
 };
 

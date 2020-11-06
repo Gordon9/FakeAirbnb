@@ -8,7 +8,6 @@ const initTravelGuarantee = () => {
     "._innhome-box-content-link-lk"
   );
   const guaranteesBody = document.querySelector("._bodyconstraint");
-  console.log("guaranteesBody:", guaranteesBody);
 
   addEvent(travelGuaranteeBox, "click", handleTravelGuarantee);
   addEvent(travelGuaranteeBtn, "click", handleTravelGuarantee);
@@ -16,6 +15,13 @@ const initTravelGuarantee = () => {
   function handleTravelGuarantee() {
     guaranteesBody.classList.remove("hide");
   }
+
+  travelGuaranteeBox.addEventListener("click", function (e) {
+    e.stopPropagation ? e.stopPropagation() : (e.cancelBubble = true);
+  });
+  travelGuaranteeBtn.addEventListener("click", function (e) {
+    e.stopPropagation ? e.stopPropagation() : (e.cancelBubble = true);
+  });
 };
 
 initTravelGuarantee();
