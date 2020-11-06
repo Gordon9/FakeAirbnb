@@ -1662,6 +1662,65 @@ _autumn-discount-read-more-container {
   padding-top: 4px !important;
 }
 
+._guarantees-feed-tab-wrap {
+  height: 38px !important;
+  padding-top: 12px !important;
+  border-bottom: 1px solid rgb(235, 235, 235) !important;
+}
+
+._guarantees-feed-tab {
+  width: 100% !important;
+  height: auto !important;
+}
+
+._guarantees-feed-tab-item {
+  padding-right: 20px !important;
+  width: auto !important;
+  float: left !important;
+}
+
+._guarantees-feed-tab-btn {
+  position: relative !important;
+  border: none !important;
+  background: transparent !important;
+  text-align: center !important;
+  padding-right: 4px !important;
+  padding-bottom: 9px !important;
+  padding-left: 0px !important;
+  width: auto !important;
+  cursor: pointer !important;
+}
+
+._guarantees-feed-tab-item-lk {
+  font-weight: 800 !important;
+  font-family: PingFang-SC !important;
+  font-size: 15px !important;
+  line-height: 21px !important;
+  text-align: center !important;
+  width: auto !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._guarantees-feed-tab-item-lk.active {
+  color: rgb(0, 132, 137) !important;
+}
+
+._guarantees-feed-tab-item-underline {
+  position: absolute !important;
+  left: 0px !important;
+  right: 0px !important;
+  bottom: 4px !important;
+  height: 3px !important;
+  background: rgb(0, 132, 137) !important;
+  transition: opacity 0.3s ease 0s !important;
+  z-index: 1 !important;
+  opacity: 0 !important;
+}
+
+._guarantees-feed-tab-item-underline.active {
+  opacity: 1 !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
@@ -1831,11 +1890,18 @@ _autumn-discount-read-more-container {
   }
   ._guarantees-panel-outer-text-title {
     font-size: 46px !important;
-    line-height: 52px !important; 
+    line-height: 52px !important;
   }
   ._guarantees-panel-outer-text-content {
     font-size: 18px !important;
     line-height: 26px !important;
+  }
+  ._guarantees-feed-tab-wrap {
+    padding-top: 0px !important;
+    height: 26px !important;
+  }
+  ._guarantees-feed-tab-item {
+    padding-right: 48px !important;
   }
 }
 
