@@ -7,12 +7,14 @@ const initTravelGuarantee = () => {
   const travelGuaranteeBtn = document.querySelector(
     "._innhome-box-content-link-lk"
   );
+  const guaranteesBody = document.querySelector("._bodyconstraint");
+  console.log("guaranteesBody:", guaranteesBody);
 
   addEvent(travelGuaranteeBox, "click", handleTravelGuarantee);
   addEvent(travelGuaranteeBtn, "click", handleTravelGuarantee);
 
   function handleTravelGuarantee() {
-    console.log("hello guys:)");
+    guaranteesBody.classList.remove("hide");
   }
 };
 

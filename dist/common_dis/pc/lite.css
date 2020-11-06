@@ -1572,6 +1572,12 @@ _autumn-discount-read-more-container {
   left: 0px !important;
   overflow-y: auto !important;
   background: rgba(255, 255, 255, 0.8) !important;
+  display: block !important;
+  /* display: block !important; */
+}
+
+._bodyconstraint.hide {
+  display: none !important;
 }
 
 ._bodyconstraint-wrap {
@@ -1614,29 +1620,42 @@ _autumn-discount-read-more-container {
   display: block !important;
 }
 
-/* ._hot-des-feed-lk-wrapper:nth-child(1) {
-  background: #fad0c4;
+._guarantees-panel-wrap {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: auto !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  max-width: 100% !important;
 }
 
-._hot-des-feed-lk-wrapper:nth-child(2) {
-  background: #fbc2eb;
+._guarantees-panel-outer-text {
+  height: auto !important;
+  width: auto !important;
+  padding-top: 16px !important;
+  padding-bottom: 48px !important;
 }
 
-._hot-des-feed-lk-wrapper:nth-child(3) {
-  background: #ffd1ff;
+._guarantees-panel-outer-text-title {
+  color: rgb(72, 72, 72) !important;
+  font-weight: 800 !important;
+  font-family: PingFang-SC !important;
+  font-size: 28px !important;
+  line-height: 30px !important;
+  text-align: left !important;
+  width: auto !important;
 }
 
-._hot-des-feed-lk-wrapper:nth-child(4) {
-  background: #fda085;
+._guarantees-panel-outer-text-content {
+  color: rgb(72, 72, 72) !important;
+  font-weight: 800 !important;
+  font-family: PingFang-SC !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  text-align: left !important;
+  width: auto !important;
+  padding-top: 4px !important;
 }
-
-._hot-des-feed-lk-wrapper:nth-child(5) {
-  background: #96e6a1;
-}
-
-._hot-des-feed-lk-wrapper:nth-child(6) {
-  background: #e2ebf0;
-} */
 
 /* Smart Nav */
 
@@ -1796,6 +1815,22 @@ _autumn-discount-read-more-container {
   }
   ._innhome-box-content-img-lk {
     vertical-align: middle !important;
+  }
+  /* guarantees-panel */
+  ._guarantees-panel-wrap {
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+  }
+  ._guarantees-panel-outer-text {
+    padding-top: 0px !important;
+  }
+  ._guarantees-panel-outer-text-title {
+    font-size: 46px !important;
+    line-height: 52px !important; 
+  }
+  ._guarantees-panel-outer-text-content {
+    font-size: 18px !important;
+    line-height: 26px !important;
   }
 }
 
