@@ -1561,6 +1561,59 @@ _autumn-discount-read-more-container {
   text-decoration: underline !important;
 }
 
+/* Innhome-Guarantee-Panel */
+
+._bodyconstraint {
+  position: fixed !important;
+  z-index: 2000 !important;
+  top: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  overflow-y: auto !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+._bodyconstraint-wrap {
+  display: table !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+._bodyconstraint-outer {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  padding: 64px !important;
+}
+
+._bodyconstraint-inner {
+  background-color: rgb(255, 255, 255) !important;
+  margin: auto !important;
+  width: 100% !important;
+  position: relative !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px !important;
+  max-width: 1032px !important;
+}
+
+._modal-offline-guarantees-wrap {
+  background-color: rgb(255, 255, 255) !important;
+  padding: 32px !important;
+  box-sizing: border-box !important;
+  min-height: 516px !important;
+}
+
+._modal-offline-guarantees-outer-btn {
+  margin-bottom: 24px !important;
+}
+
+._modal-offline-guarantees-inner-btn {
+  cursor: pointer !important;
+  background-color: transparent !important;
+  color: buttontext !important;
+  border: 0px !important;
+  display: block !important;
+}
+
 /* ._hot-des-feed-lk-wrapper:nth-child(1) {
   background: #fad0c4;
 }
@@ -1778,6 +1831,9 @@ _autumn-discount-read-more-container {
   /* INNHOME-SERVICE */
   ._innhome-box-title-wrap {
     width: 50% !important;
+  }
+  ._modal-offline-guarantees-wrap {
+    padding: 48px !important;
   }
 }
 
