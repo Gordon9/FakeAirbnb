@@ -1721,6 +1721,34 @@ _autumn-discount-read-more-container {
   opacity: 1 !important;
 }
 
+._tab_house_security-wrap {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  display: inline-block !important;
+  width: 100% !important;
+}
+
+._tab-house-ecurity-outer {
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+}
+
+._tab-house-ecurity-item {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  min-height: 1px !important;
+  position: relative !important;
+  width: 100% !important;
+  float: left !important;
+}
+
+._tab-house-ecurity-item-inner {
+  padding-top: 15.75px !important;
+  width: 300px !important;
+  height: 240px !important;
+  margin: auto !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
@@ -1748,6 +1776,82 @@ _autumn-discount-read-more-container {
   height: 100% !important;
   transform: translateY(50%) !important;
   text-align: center !important;
+}
+
+._tab-house-security-item-lk {
+  position: relative !important;
+}
+
+._tab-house-ecurity-item-img {
+  position: absolute !important;
+  /* the animation coming soon.... */
+  animation-name: keyframe_tab-house-ecurity-item-img !important;
+  animation-duration: 300ms !important;
+  animation-timing-function: ease-out !important;
+  vertical-align: middle !important;
+  width: 400px !important;
+  height: 320px !important;
+}
+
+._tab-house-security-outer {
+  margin-left: -16px !important;
+  margin-right: -16px !important;
+}
+
+._tab-house-security-title-lk {
+  width: 100% !important;
+  font-weight: bold !important;
+  color: rgb(72, 72, 72) !important;
+  font-family: PingFang-SC !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  text-align: left !important;
+  padding-top: 48px !important;
+}
+
+._tab-house-security-subtitle-lk {
+  width: 100% !important;
+  font-weight: bold !important;
+  color: rgb(72, 72, 72) !important;
+  font-family: PingFang-SC !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  text-align: left !important;
+  padding-top: 28 !important;
+}
+
+._tab-house-security-content-wrap {
+  width: 100% !important;
+  padding-bottom: 24px !important;
+  padding-left: 12px !important;
+}
+
+._tab-house-security-content-title {
+  width: 100% !important;
+  font-weight: bold !important;
+  color: rgb(72, 72, 72) !important;
+  font-family: PingFang-SC !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  text-align: left !important;
+}
+
+._tab-house-security-content-text {
+  width: 100% !important;
+  color: rgb(72, 72, 72) !important;
+  font-family: PingFang-SC !important;
+  font-size: 15px !important;
+  line-height: 25px !important;
+  text-align: left !important;
+}
+
+._tab-professional-customer-wrap:last-child {
+  padding-bottom: 40px !important;
+}
+
+._tab-professional-customer {
+  margin-left: -16px !important;
+  margin-right: -16px !important;
 }
 
 /* SmartLayout  */
@@ -1903,6 +2007,38 @@ _autumn-discount-read-more-container {
   ._guarantees-feed-tab-item {
     padding-right: 48px !important;
   }
+  ._tab_house_security-wrap {
+    padding-top: 49px !important;
+    padding-bottom: 49px !important;
+  }
+  ._tab-house-ecurity-item {
+    width: 50% !important;
+    float: left !important;
+    /* max-width: 428px !important; */
+    max-width: 436px !important;
+  }
+  ._tab-house-ecurity-item-inner {
+    padding-top: 64px !important;
+    width: 400px !important;
+    height: 320px !important;
+  }
+  ._tab-house-security-title-lk {
+    padding-top: 0px !important;
+    line-height: 34px !important;
+  }
+  ._tab-house-security-subtitle-lk {
+    padding-bottom: 32px !important;
+    line-height: 26px !important;
+  }
+  ._tab-house-security-content-wrap {
+    padding-left: 0px !important;
+  }
+  ._tab-professional-customer-wrap:last-child {
+    padding-bottom: 52px !important;
+  }
+  /* ._tab-house-security-outer {
+    width: 936px !important;
+  } */
 }
 
 @media (min-width: 1128px) {
