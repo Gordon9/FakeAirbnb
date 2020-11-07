@@ -11,12 +11,33 @@ const startOfflineGuarantees = () => {
   const tabHouseSecurityWrap = document.querySelector(
     "._tab_house_security-wrap"
   );
+  const guaranteesFeedBtns = document.querySelectorAll(
+    "._guarantees-feed-tab-btn > span"
+  );
+
   let distanceToTop;
   let houseSecurityDistanceToTop;
 
   const removeGuaranteesPanel = () => {
     guaranteesBody.classList.add("hide");
   };
+
+  const handleGuaranteesFeedBtn = (e) => {
+    for (let btn of guaranteesFeedBtns) {
+      if (btn.classList.contains("active")) {
+        btn.classList.remove("active");
+      }
+    }
+    e.target.classList.add("active");
+  };
+
+  const listenGuaranteesFeedBtns = () => {
+    for (let feedBtn of guaranteesFeedBtns) {
+      addEvent(feedBtn, "click", handleGuaranteesFeedBtn);
+    }
+  };
+
+  listenGuaranteesFeedBtns();
 
   const handleGuaranteesFeedWrapFix = () => {
     if (guaranteesFeedWrapFix === null) {
