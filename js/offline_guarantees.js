@@ -29,6 +29,32 @@ const startOfflineGuarantees = () => {
       }
     }
     e.target.classList.add("active");
+
+    let curBtnText = e.target.innerText;
+    console.log("curBtnText:", curBtnText);
+
+    let curId;
+
+    const scrollToView = () => {
+      switch (curBtnText) {
+        case "安心房源保障":
+          curId = "tab_house_security";
+          break;
+        case "专业中文客服":
+          curId = "tab_professional_customer";
+          break;
+        case "旅行安全保障":
+          curId = "tab_travel_safe";
+          break;
+      }
+      document.getElementById(curId).scrollIntoView({
+        block: "start",
+        inline: "nearest",
+        behavior: "smooth",
+      });
+    };
+
+    scrollToView();
   };
 
   const listenGuaranteesFeedBtns = () => {

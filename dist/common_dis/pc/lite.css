@@ -1625,6 +1625,10 @@ _autumn-discount-read-more-container {
   display: block !important;
 }
 
+._modal-offline-guarantees-inner-btn:active {
+  outline: none !important;
+}
+
 ._guarantees-panel-wrap {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -2070,6 +2074,7 @@ _autumn-discount-read-more-container {
   ._tab_house_security-wrap {
     padding-top: 49px !important;
     padding-bottom: 49px !important;
+    /* margin-bottom: 100px !important; */
   }
   ._tab-house-ecurity-item {
     width: 50% !important;
@@ -2094,8 +2099,9 @@ _autumn-discount-read-more-container {
     padding-left: 0px !important;
   }
   ._tab-professional-customer-wrap:last-child {
-    /* padding-bottom: 52px !important; */
+    padding-bottom: 52px !important;
     min-height: 450px !important;
+    padding-top: 52px !important;
   }
   /* ._tab-house-security-outer {
     width: 936px !important;
