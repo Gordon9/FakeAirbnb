@@ -144,7 +144,6 @@ function addEvent(el, event, callback) {
 }
 
 addEvent(listingExperBtn, "mouseenter", () => {
-  console.log("enter...");
   handleBtnClick();
 });
 
@@ -211,7 +210,6 @@ function handleBtnClick() {
 }
 
 addEvent(listingExperBtn, "mouseleave", () => {
-  console.log("leave...");
 });
 
 addEvent(btnFyLk, "click", () => {
