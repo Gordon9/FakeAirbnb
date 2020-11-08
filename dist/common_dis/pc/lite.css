@@ -2054,6 +2054,8 @@ _autumn-discount-read-more-container {
   display: block !important;
   padding: 0 32px !important;
   z-index: 1 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 ._classic-travel-city-carousel-nav-outer {
@@ -2212,6 +2214,13 @@ _autumn-discount-read-more-container {
 }
 
 /* SmartLayout  */
+
+@media (min-width: 743px) and (max-width: 1127px) {
+  ._classic-travel-city-carousel-nav {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+}
 
 @media (min-width: 744px) {
   .outer-w {
