@@ -7,7 +7,7 @@
 body {
   /* background-color: #ccc !important; */
   background-color: #ffffff !important;
-  height: 200vh !important;
+  height: 400vh !important;
 }
 
 header {
@@ -1898,7 +1898,8 @@ _autumn-discount-read-more-container {
 /* CLASSIC-TRAVEL-CITY */
 
 ._classic-travel-city {
-  margin-top: 32px !important;
+  /* margin-top: 32px !important; */
+  margin-top: 84px !important;
   margin-bottom: 32px !important;
 }
 
