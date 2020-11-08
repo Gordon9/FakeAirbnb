@@ -1667,7 +1667,7 @@ _autumn-discount-read-more-container {
   overflow-wrap: break-word !important;
   font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
   font-size: 10px !important;
-  font-weight: 800 !important; 
+  font-weight: 800 !important;
   line-height: 1.2em !important;
   letter-spacing: 0.1em !important;
   color: rgb(72, 72, 72) !important;
@@ -1896,6 +1896,7 @@ _autumn-discount-read-more-container {
 }
 
 /* CLASSIC-TRAVEL-CITY */
+
 ._classic-travel-city {
   margin-top: 32px !important;
   margin-bottom: 32px !important;
@@ -1914,7 +1915,7 @@ _autumn-discount-read-more-container {
 
 ._classic-travel-city-title-inner {
   color: rgb(34, 34, 34) !important;
-  font-family:  Cereal, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Cereal, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   font-weight: 400 !important;
   width: 100% !important;
   margin-bottom: 8px !important;
@@ -1925,6 +1926,118 @@ _autumn-discount-read-more-container {
   margin-bottom: 0px !important;
   font-size: 22px !important;
   line-height: 26px !important;
+}
+
+._classic-travel-city-carousel {
+  position: relative !important;
+  z-index: 0 !important;
+}
+
+._classic-travel-city-carousel-container {
+  display: flex !important;
+  height: 100% !important;
+  list-style: none !important;
+  overflow: auto !important;
+  padding-left: 0px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  min-width: 100% !important;
+  scroll-snap-stop: x mandatory !important;
+}
+
+._classic-travel-city-carousel-outer {
+  border-style: solid !important;
+  border-color: transparent !important;
+  scroll-snap-align: start !important;
+  scroll-snap-stop: always !important;
+}
+
+._classic-travel-city-carousel-item {
+  height: 100% !important;
+}
+
+._classic-travel-city-carousel-item-wrap {
+  width: 100% !important;
+  margin-right: 6px !important;
+}
+
+._classic-travel-city-carousel-item-container {
+  text-decoration: none !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._classic-travel-city-carousel-img-container {
+  contain: strict !important;
+  position: relative !important;
+  width: 100% !important;
+  z-index: 0 !important;
+}
+
+._classic-travel-city-carousel-img-outer {
+  position: absolute !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+._classic-travel-city-carousel-img-inner {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+._classic-travel-city-carousel-title {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: inline !important; 
+}
+
+._classic-travel-city-carousel-title-lk {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  line-height: 1.28571em !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._classic-travel-city-carousel-subtitle {
+  margin-left: 8px !important;
+  display: inline !important; 
+}
+
+._classic-travel-city-carousel-subtitle-lk {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.28571em !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._classic-travel-city-carousel-price {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: block !important;
+}
+
+._classic-travel-city-carousel-price-lk {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.33333em !important;
+  color: rgb(72, 72, 72) !important;
 }
 
 /* Smart Nav */
@@ -2064,7 +2177,6 @@ _autumn-discount-read-more-container {
 ._tab-house-link-primary-lk:hover {
   text-decoration: underline !important;
 }
-
 
 /* SmartLayout  */
 
