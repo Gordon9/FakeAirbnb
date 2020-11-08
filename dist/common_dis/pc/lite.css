@@ -1561,6 +1561,46 @@ _autumn-discount-read-more-container {
   text-decoration: underline !important;
 }
 
+/* PLUS-ROOMS */
+
+._plus-rooms-wrap {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+._plus-rooms-text {
+  color: rgb(34, 34, 34) !important;
+  display: flex !important;
+}
+
+._plus-rooms-text-outer {
+  -webkit-box-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 16px !important;
+}
+
+._plus-rooms-text-inner {
+  color: rgb(34, 34, 34) !important;
+  font-family: Cereal, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+  margin-bottom: 8px !important;
+}
+
+._plus-rooms-text-lk-title {
+  font-weight: 600 !important;
+  margin-bottom: 0px !important;
+  font-size: 22px !important;
+  line-height: 26px !important;
+}
+
+._plus-rooms-text-lk-content {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  margin-top: 4px !important;
+}
+
 /* Innhome-Guarantee-Panel */
 
 ._bodyconstraint {
@@ -2109,6 +2149,15 @@ _autumn-discount-read-more-container {
   ._tab-travel-safe-wrap:last-child {
     padding-bottom: 52px !important;
   }
+  /* PLUS-ROOMS */
+  ._plus-rooms-wrap {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  ._plus-rooms-text-lk-content {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
 }
 
 @media (min-width: 1128px) {
@@ -2146,6 +2195,9 @@ _autumn-discount-read-more-container {
   }
   ._modal-offline-guarantees-wrap {
     padding: 48px !important;
+  }
+  ._plus-rooms-text {
+    width: 50% !important;
   }
 }
 
