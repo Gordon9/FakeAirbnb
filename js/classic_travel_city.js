@@ -45,7 +45,7 @@ const startClassicTravelCity = () => {
       classicCityUrl = datasArr[i].recipe.image;
       classicCityUrls[i].style.backgroundImage = `url(${classicCityUrl})`;
     }
-    console.log("render classic city url done:)");
+    // console.log("render classic city url done:)");
   };
 
   const renderClassicCityTitle = () => {
@@ -54,7 +54,7 @@ const startClassicTravelCity = () => {
       classicCityTitle = datasArr[i].recipe.source;
       classicCityTitles[i].innerText = classicCityTitle;
     }
-    console.log("render classic city title done <3");
+    // console.log("render classic city title done <3");
   };
 
   const renderClassicCitySubTitle = () => {
@@ -63,7 +63,7 @@ const startClassicTravelCity = () => {
       classicCitySubtitle = datasArr[i].recipe.label;
       classicCitySubtitles[i].innerText = classicCitySubtitle;
     }
-    console.log("render classic city subtitle done 3>");
+    // console.log("render classic city subtitle done 3>");
   };
 
   const renderclassicCityPrice = () => {
@@ -72,7 +72,7 @@ const startClassicTravelCity = () => {
       classicCityPrice = Math.round(datasArr[i].recipe.calories);
       classicCityPrices[i].innerText = `人均￥${classicCityPrice}/晚`;
     }
-    console.log("render classic city price done ^^");
+    // console.log("render classic city price done ^^");
   };
 
   function initRequest() {
@@ -85,7 +85,7 @@ const startClassicTravelCity = () => {
       );
       const data = await response.json();
       datasArr = data.hits;
-      console.log("datasArr:", datasArr);
+      // console.log("datasArr:", datasArr);
 
       renderClassicCityUrl();
       renderClassicCityTitle();

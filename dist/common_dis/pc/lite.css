@@ -2079,6 +2079,44 @@ _autumn-discount-read-more-container {
   display: block !important;
 }
 
+/* HOT-ONLINE-EXP */
+
+._hot-online-exp {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+._hot-online-exp-header {
+  display: flex !important;
+  color: #222222 !important;
+}
+
+._hot-online-exp-header-wrap {
+  -webkit-box-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 16px !important;
+}
+
+._hot-online-exp-header-outer {
+  cursor: pointer !important;
+}
+
+._hot-online-exp-header-inner {
+  color: #222222 !important;
+  font-family: Cereal, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+  margin-bottom: 8px !important;
+}
+
+._hot-online-exp-header-lk {
+  font-weight: 600 !important;
+  margin-bottom: 0px !important;
+  font-size: 22px !important;
+  line-height: 26px !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
