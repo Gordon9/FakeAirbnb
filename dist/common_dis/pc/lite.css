@@ -1952,6 +1952,10 @@ _autumn-discount-read-more-container {
   scroll-snap-stop: x mandatory !important;
 }
 
+._classic-travel-city-carousel-container::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 ._classic-travel-city-carousel-outer {
   border-style: solid !important;
   border-color: transparent !important;
