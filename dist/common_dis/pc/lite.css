@@ -2261,6 +2261,49 @@ _autumn-discount-read-more-container {
   background-image: none !important;
 }
 
+._hot-online-exp-feeds-item-photo-outer1 {
+  position: absolute !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  -webkit-box-pack: justify !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-orient: vertical !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  pointer-events: none !important;
+}
+
+._hot-online-exp-feeds-item-photo-header {
+  -webkit-box-pack: justify !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+._hot-online-exp-feeds-item-photo-header-online {
+  display: inline-flex !important;
+  vertical-align: top !important;
+  background-clip: padding-box !important;
+  max-width: 100% !important;
+  box-shadow: rgba(0, 0, 0, 0.18) !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+}
+
+._hot-online-exp-feeds-item-photo-header-title {
+  font-size: 12px !important;
+  line-height: 16px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em !important;
+  max-height: 16px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
