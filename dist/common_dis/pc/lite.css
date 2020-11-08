@@ -2127,7 +2127,7 @@ _autumn-discount-read-more-container {
   padding-left: 16px !important;
 }
 
-._hot-online-exp-header-outer:hover + ._hot-online-exp-header-nav {
+._hot-online-exp-header-outer:hover+._hot-online-exp-header-nav {
   opacity: 1 !important;
 }
 
@@ -2152,6 +2152,113 @@ _autumn-discount-read-more-container {
   text-decoration: none !important;
   height: 100% !important;
   width: 100% !important;
+}
+
+._hot-online-exp-feeds {
+  margin-left: -24px !important;
+  margin-right: -24px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding: 0 18px !important;
+}
+
+._hot-online-exp-feeds-item {
+  display: inline-block !important;
+  vertical-align: top !important;
+  white-space: nowrap !important;
+}
+
+._hot-online-exp-feeds-item-container {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 8px 6px 12px !important;
+}
+
+._hot-online-exp-feeds-item-outer {
+  font-weight: 400 !important;
+  color: rgb(34, 34, 34) !important;
+  position: relative !important;
+  /* why this css */
+  /* --card-typography-color-primary: #222222 !important; */
+  /* --card-typography-color-secondary: #717171 !important; */
+}
+
+._hot-online-exp-feeds-item-link {
+  display: block !important;
+  height: 100% !important;
+  left: 0px !important;
+  position: absolute !important;
+  top: 0px !important;
+  width: 100% !important;
+  border-radius: 12px !important;
+}
+
+._hot-online-exp-feeds-item-photo {
+  margin-bottom: 8px !important;
+}
+
+._hot-online-exp-feeds-item-photo-wrap {
+  contain: content !important;
+  position: relative !important;
+  -webkit-mask-image: -webkit-radial-gradient(center, white, black) !important;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+
+._hot-online-exp-feeds-item-photo-wrap::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  border-radius: inherit !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  pointer-events: none !important;
+}
+
+._hot-online-exp-feeds-item-photo-outer0 {
+  position: relative !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+
+._hot-online-exp-feeds-item-photo-inner0 {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: center !important;
+  position: absolute !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+._hot-online-exp-feeds-item-photo-lk {
+  position: absolute !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  width: 0px !important;
+  height: 0px !important;
+}
+
+._hot-online-exp-feeds-item-photo-lk {
+  width: 100% !important;
+  height: 100% !important;
+  position: static !important;
+}
+
+._hot-online-exp-feeds-item-photo-div {
+  display: none !important;
+  background-image: none !important;
 }
 
 /* Smart Nav */
@@ -2582,6 +2689,12 @@ _autumn-discount-read-more-container {
     margin-bottom: 40px !important;
   }
   ._classic-travel-city-title-wrap {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 759px) {
+  ._hot-online-exp-feeds-item {
     width: 50% !important;
   }
 }
