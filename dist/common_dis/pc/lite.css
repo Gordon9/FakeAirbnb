@@ -1996,7 +1996,7 @@ _autumn-discount-read-more-container {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
-  display: inline !important; 
+  display: inline !important;
 }
 
 ._classic-travel-city-carousel-title-lk {
@@ -2011,7 +2011,7 @@ _autumn-discount-read-more-container {
 
 ._classic-travel-city-carousel-subtitle {
   margin-left: 8px !important;
-  display: inline !important; 
+  display: inline !important;
 }
 
 ._classic-travel-city-carousel-subtitle-lk {
@@ -2039,6 +2039,32 @@ _autumn-discount-read-more-container {
   font-weight: 600 !important;
   line-height: 1.33333em !important;
   color: rgb(72, 72, 72) !important;
+}
+
+._classic-travel-city-carousel-nav {
+  position: absolute !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  display: block !important;
+  padding: 0 32px !important;
+  z-index: 1 !important;
+}
+
+._classic-travel-city-carousel-nav-outer {
+  position: absolute !important;
+  height: 0px !important;
+  margin: -12px auto 0px !important;
+  display: block !important;
+  z-index: 1 !important;
+}
+
+._classic-travel-city-carousel-nav-btn {
+  cursor: pointer !important;
+  background-color: transparent !important;
+  /* color: buttontext !important; */
+  color: #008489 !important;
+  border: 0px !important;
+  display: block !important;
 }
 
 /* Smart Nav */
@@ -2393,6 +2419,10 @@ _autumn-discount-read-more-container {
   }
   ._plus-rooms-link-inner-a-wrap {
     margin-top: 40px !important;
+  }
+  ._classic-travel-city-carousel-na {
+    width: 24px !important;
+    padding: 0px !important;
   }
 }
 
