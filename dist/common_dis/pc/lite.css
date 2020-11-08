@@ -1895,6 +1895,38 @@ _autumn-discount-read-more-container {
   margin: auto !important;
 }
 
+/* CLASSIC-TRAVEL-CITY */
+._classic-travel-city {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+._classic-travel-city-title-wrap {
+  color: rgb(34, 34, 34) !important;
+  display: flex !important;
+}
+
+._classic-travel-city-title-outer {
+  -webkit-box-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+._classic-travel-city-title-inner {
+  color: rgb(34, 34, 34) !important;
+  font-family:  Cereal, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+  margin-bottom: 8px !important;
+}
+
+._classic-travel-city-title-lk {
+  font-weight: 600 !important;
+  margin-bottom: 0px !important;
+  font-size: 22px !important;
+  line-height: 26px !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
@@ -2032,6 +2064,7 @@ _autumn-discount-read-more-container {
 ._tab-house-link-primary-lk:hover {
   text-decoration: underline !important;
 }
+
 
 /* SmartLayout  */
 
@@ -2299,6 +2332,13 @@ _autumn-discount-read-more-container {
   }
   ._plus-rooms-link-inner-a-wrap {
     margin-top: 56px !important;
+  }
+  ._classic-travel-city {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  ._classic-travel-city-title-wrap {
+    width: 50% !important;
   }
 }
 
