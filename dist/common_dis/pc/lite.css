@@ -354,6 +354,7 @@ header {
 ._site-content {
   position: relative !important;
   display: block !important;
+  outline: none !important;
 }
 
 ._o-site-content {
@@ -1607,23 +1608,28 @@ _autumn-discount-read-more-container {
 }
 
 ._plus-rooms-link-outer {
-  height: 250px !important;
+  height: 260px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 3px !important;
 }
 
 ._plus-rooms-link-inner {
   position: absolute !important;
-  /* width: 100% !important; */
-  /* height: 100% !important; */
-  height: 300px !important;
-  width: 1032px !important;
+  width: 100% !important;
+  height: 100% !important;
+  /* height: 300px !important; */
+  /* width: 1032px !important; */
 }
 
 ._plus-rooms-link-lk {
   border-radius: 3px !important;
   border: 0.5px solid rgba(0, 0, 0, 0.05) !important;
   position: absolute !important;
-  height: 300px !important;
-  width: 1032px !important;
+  /* height: 300px !important; */
+  /* width: 1032px !important; */
+  width: 100% !important;
+  height: 100% !important;
 }
 
 ._plus-rooms-link-inner-a-wrap {
@@ -2423,6 +2429,13 @@ _autumn-discount-read-more-container {
   ._classic-travel-city-carousel-na {
     width: 24px !important;
     padding: 0px !important;
+  }
+  ._classic-travel-city-carousel-nav {
+    width: 24px !important;
+    padding: 0px !important;
+  }
+  ._plus-rooms-link-outer {
+    height: 250px !important;
   }
 }
 
