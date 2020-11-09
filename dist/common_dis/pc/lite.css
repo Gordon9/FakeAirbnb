@@ -2279,6 +2279,7 @@ _autumn-discount-read-more-container {
   -webkit-box-pack: justify !important;
   display: flex !important;
   justify-content: space-between !important;
+  width: 100% !important;
 }
 
 ._hot-online-exp-feeds-item-photo-header-online {
@@ -2286,7 +2287,7 @@ _autumn-discount-read-more-container {
   vertical-align: top !important;
   background-clip: padding-box !important;
   max-width: 100% !important;
-  box-shadow: rgba(0, 0, 0, 0.18) !important;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px !important;
   border-radius: 4px !important;
   padding: 4px 8px !important;
 }
@@ -2302,6 +2303,38 @@ _autumn-discount-read-more-container {
   display: -webkit-box !important;
   -webkit-line-clamp: 1 !important;
   -webkit-box-orient: vertical !important;
+}
+
+._hot-online-exp-feeds-item-photo-header-favorite {
+  pointer-events: auto !important;
+  margin-top: -5px !important;
+  margin-right: -3px !important;
+}
+
+._hot-online-exp-feeds-item-photo-header-favorite-btn {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: center !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  touch-action: manipulation !important;
+  font-family: Cereal, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  border-radius: 50% !important;
+  outline: none !important;
+  padding: 2px 0px 0px !important;
+  transition: transform 0.25s ease 0s !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+  color: rgb(34, 34, 34) !important;
+  margin: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
 }
 
 /* Smart Nav */
