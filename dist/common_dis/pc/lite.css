@@ -2271,6 +2271,7 @@ _autumn-discount-read-more-container {
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
   display: flex !important;
+  flex-direction: column !important;
   justify-content: space-between !important;
   pointer-events: none !important;
 }
@@ -2335,6 +2336,43 @@ _autumn-discount-read-more-container {
   margin: 0px !important;
   width: 32px !important;
   height: 32px !important;
+}
+
+._hot-online-exp-feeds-item-photo-control {
+  padding: 10px 15px !important;
+}
+
+._hot-online-exp-feeds-item-photo-control-btn {
+  appearance: none !important;
+  display: inline-block !important;
+  border-radius: 50% !important;
+  border: none !important;
+  outline: none !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  color: rgb(255, 255, 255) !important;
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+  position: relative !important;
+  background: transparent !important;
+  transition: transform 0.25s ease 0s !important;
+  pointer-events: all !important;
+}
+
+._hot-online-exp-feeds-item-photo-control-btn::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+}
+
+._hot-online-exp-feeds-item-photo-control-btn-lk {
+  position: relative !important;
 }
 
 /* Smart Nav */
