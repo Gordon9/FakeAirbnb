@@ -2375,6 +2375,56 @@ _autumn-discount-read-more-container {
   position: relative !important;
 }
 
+._hot-online-exp-feeds-item-rating {
+  -webkit-box-align: center !important;
+  align-items: center !important;
+  display: flex !important;
+  width: 100% !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+._hot-online-exp-feeds-item-rating-stars {
+  -webkit-box-align: center !important;
+  align-items: center !important;
+  display: flex !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+._hot-online-exp-feeds-item-rating-stars-wrap {
+  -webkit-box-align: center !important;
+  align-items: center !important;
+  display: flex !important;
+  margin-right: 4px !important;
+  color: rgb(255, 90, 95) !important;
+}
+
+._hot-online-exp-feeds-item-rating-score {
+  color: rgb(34, 34, 34) !important;
+}
+
+._hot-online-exp-feeds-item-rating-score-text {
+  color: rgb(113, 113, 113) !important;
+}
+
+._hot-online-exp-feeds-item-rating-symbol {
+  color: #717171 !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
+._hot-online-exp-feeds-item-rating-area {
+  color: #717171 !important;
+  line-height: 16px !important;
+  max-height: 16px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
