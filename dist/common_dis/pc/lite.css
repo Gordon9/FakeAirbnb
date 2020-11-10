@@ -2613,7 +2613,7 @@ _autumn-discount-read-more-container {
   ._hot-online-exp-feeds-item {
     width: 50% !important;
   }
-  ._hot-online-exp-feeds-item:nth-child(4)~* {
+  ._hot-online-exp-feeds-item:nth-child(4)~._hot-online-exp-feeds-item {
     display: none !important;
   }
 }
@@ -2622,7 +2622,7 @@ _autumn-discount-read-more-container {
   ._hot-online-exp-feeds-item {
     width: 33.3333% !important;
   }
-  ._hot-online-exp-feeds-item:nth-child(3)~* {
+  ._hot-online-exp-feeds-item:nth-child(3)~._hot-online-exp-feeds-item {
     display: none !important;
   }
 }
@@ -2631,7 +2631,7 @@ _autumn-discount-read-more-container {
   ._hot-online-exp-feeds-item {
     width: 25% !important;
   }
-  ._hot-online-exp-feeds-item:nth-child(4)~* {
+  ._hot-online-exp-feeds-item:nth-child(4)~._hot-online-exp-feeds-item {
     display: none !important;
   }
 }
@@ -2640,7 +2640,7 @@ _autumn-discount-read-more-container {
   ._hot-online-exp-feeds-item {
     width: 20% !important;
   }
-  ._hot-online-exp-feeds-item:nth-child(5)~* {
+  ._hot-online-exp-feeds-item:nth-child(5)~._hot-online-exp-feeds-item {
     display: none !important;
   }
 }
@@ -2649,7 +2649,7 @@ _autumn-discount-read-more-container {
   ._hot-online-exp-feeds-item {
     width: 16.6667% !important;
   }
-  ._hot-online-exp-feeds-item:nth-child(6)~* {
+  ._hot-online-exp-feeds-item:nth-child(6)~._hot-online-exp-feeds-item {
     display: none !important;
   }
 }
