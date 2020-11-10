@@ -2462,7 +2462,6 @@ _autumn-discount-read-more-container {
   width: 1px !important;
 }
 
-
 /* Smart Nav */
 
 ._smart-nav {
@@ -2607,6 +2606,57 @@ _autumn-discount-read-more-container {
   ._classic-travel-city-carousel-nav {
     opacity: 1 !important;
     pointer-events: auto !important;
+  }
+}
+
+@media (max-width: 759px) {
+  ._hot-online-exp-feeds-item {
+    width: 50% !important;
+  }
+  ._hot-online-exp-feeds-item:nth-child(4)~* {
+    display: none !important;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 959px) {
+  ._hot-online-exp-feeds-item {
+    width: 33.3333% !important;
+  }
+  ._hot-online-exp-feeds-item:nth-child(3)~* {
+    display: none !important;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1159px) {
+  ._hot-online-exp-feeds-item {
+    width: 25% !important;
+  }
+  ._hot-online-exp-feeds-item:nth-child(4)~* {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1160px) and (max-width: 1359px) {
+  ._hot-online-exp-feeds-item {
+    width: 20% !important;
+  }
+  ._hot-online-exp-feeds-item:nth-child(5)~* {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1360px) and (max-width: 1559px) {
+  ._hot-online-exp-feeds-item {
+    width: 16.6667% !important;
+  }
+  ._hot-online-exp-feeds-item:nth-child(6)~* {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1560px) {
+  ._hot-online-exp-feeds-item {
+    width: 14.2857% !important;
   }
 }
 
@@ -2834,6 +2884,9 @@ _autumn-discount-read-more-container {
   ._plus-rooms-link-outer {
     height: 250px !important;
   }
+  ._hot-online-exp-feeds {
+    padding: 0 16px !important;
+  }
 }
 
 @media (min-width: 1128px) {
@@ -2891,12 +2944,6 @@ _autumn-discount-read-more-container {
     margin-bottom: 40px !important;
   }
   ._classic-travel-city-title-wrap {
-    width: 50% !important;
-  }
-}
-
-@media (max-width: 759px) {
-  ._hot-online-exp-feeds-item {
     width: 50% !important;
   }
 }
