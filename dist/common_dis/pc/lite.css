@@ -2462,6 +2462,43 @@ _autumn-discount-read-more-container {
   width: 1px !important;
 }
 
+._hot-online-exp-read-more-button {
+  display: inline-block !important;
+  text-align: left !important;
+  width: 100% !important;
+  margin-top: 8px !important;
+}
+
+._hot-online-exp-read-more-button-link {
+  background: transparent !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  padding: 14px !important;
+  text-align: center !important;
+  text-decoration-line: none !important;
+  white-space: nowrap !important;
+  width: 100% !important;
+}
+
+._hot-online-exp-read-more-button-link-outer {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  letter-spacing: normal !important;
+  font-weight: 800 !important;
+  display: block !important;
+  margin-right: 0px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+._hot-online-exp-read-more-button-link-inner {
+  display: none !important;
+}
+
 /* Smart Nav */
 
 ._smart-nav {
@@ -2886,6 +2923,26 @@ _autumn-discount-read-more-container {
   }
   ._hot-online-exp-feeds {
     padding: 0 16px !important;
+  }
+  ._hot-online-exp-read-more-button-link {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 4px 0 !important;
+    text-align: left !important;
+    width: auto !important;
+  }
+  ._hot-online-exp-read-more-button-link-outer {
+    font-weight: 600 !important;
+    font-size: 17px !important;
+    line-height: 22px !important;
+    display: inline !important;
+    margin-right: 6px !important;
+  }
+  ._hot-online-exp-read-more-button-link:hover ._hot-online-exp-read-more-button-link-outer {
+    text-decoration: underline !important;
+  }
+  ._hot-online-exp-read-more-button-link-inner {
+    display: inline !important;
   }
 }
 
