@@ -3197,6 +3197,7 @@ _autumn-discount-read-more-container {
 }
 
 /* FOLLOW WECHAT PANEL */
+
 ._follow-wechat-panel {
   position: fixed !important;
   z-index: 2000 !important;
@@ -3285,6 +3286,34 @@ _autumn-discount-read-more-container {
 
 ._follow-wechat-panel-modal-wechat-official-photo {
   border: 1px solid rgb(235, 235, 235) !important;
+}
+
+._follow-wechat-panel-modal-done-btn {
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  transition-property: background, border-color, color !important;
+  transition-duration: 0.2s !important;
+  transition-timing-function: ease-out !important;
+  width: auto !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  min-width: 71.1935px !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  color: rgb(255, 255, 255) !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: normal !important;
+  padding-top: 10px !important;
+  padding-left: 22px !important;
+  padding-right: 22px !important;
+  padding-bottom: 10px !important;
+  background: #008489 !important;
 }
 
 /* SmartLayout  */
