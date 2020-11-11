@@ -2999,7 +2999,7 @@ _autumn-discount-read-more-container {
 
 ._footer-navigation-link-lk:hover {
   text-decoration: underline !important;
-} 
+}
 
 ._footer-navigation-link-lk {
   font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
@@ -3097,6 +3097,12 @@ _autumn-discount-read-more-container {
 @media (min-width: 1560px) {
   ._hot-online-exp-feeds-item {
     width: 14.2857% !important;
+  }
+}
+
+@media (max-width: 743px) {
+  ._footer-navigation-links-inner {
+    display: none !important;
   }
 }
 
@@ -3419,6 +3425,10 @@ _autumn-discount-read-more-container {
   }
   ._classic-travel-city-title-wrap {
     width: 50% !important;
+  }
+  ._footer-navigation-links-wrapper {
+    margin: 0 auto !important;
+    position: relative !important;
   }
 }
 
