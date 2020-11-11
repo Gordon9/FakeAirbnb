@@ -7,7 +7,7 @@
 body {
   /* background-color: #ccc !important; */
   background-color: #ffffff !important;
-  height: 700vh !important;
+  /* height: 700vh !important; */
 }
 
 header {
@@ -2960,6 +2960,7 @@ _autumn-discount-read-more-container {
 ._footer-navigation-links-inner {
   margin-left: -8px !important;
   margin-right: -8px !important;
+  height: 162px !important;
 }
 
 ._footer-navigation-links-inner-column {
@@ -3030,6 +3031,115 @@ _autumn-discount-read-more-container {
   font-weight: 600 !important;
   line-height: 1.33333em !important;
   color: rgb(255, 255, 255) !important;
+}
+
+._footer-navigation-links-copyright {
+  border-top: 1px solid rgb(235, 235, 235) !important;
+  margin-top: 16px !important;
+  padding-top: 16px !important;
+}
+
+._footer-navigation-links-copyright-text {
+  flex: 1 1 auto !important;
+}
+
+._footer-navigation-links-copyright-text-outer {
+  padding-top: 1px !important;
+}
+
+._footer-navigation-links-copyright-text-inner {
+  display: flex !important;
+}
+
+._footer-navigation-links-copyright-logo {
+  display: inline-flex !important;
+  align-self: center !important;
+}
+
+._footer-navigation-links-copyright-info {
+  display: inline-flex !important;
+  align-self: center !important;
+}
+
+._footer-navigation-links-copyright-info-china-menu {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.28571em !important;
+  color: rgb(118, 118, 118) !important;
+}
+
+._footer-navigation-links-copyright-icp-link {
+  font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+  text-decoration: none !important;
+  color: #767676 !important;
+}
+
+._footer-navigation-links-copyright-icp-link:hover {
+  text-decoration: underline !important;
+}
+
+._footer-navigation-links-copyright-beian-link {
+  font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+  text-decoration: none !important;
+  color: #767676 !important;
+}
+
+._footer-navigation-links-copyright-beian-link:hover {
+  text-decoration: underline !important;
+}
+
+._footer-navigation-links-copyright-lincense-link {
+  font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+  text-decoration: none !important;
+  color: #767676 !important;
+}
+
+._footer-navigation-links-copyright-lincense-link:hover {
+  text-decoration: underline !important;
+}
+
+._footer-copyright-airbnb {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.28571em !important;
+  color: rgb(118, 118, 118) !important;
+}
+
+._footer-copyrigh-others-link {
+  display: none !important;
+}
+
+._footer-copyrigh-others-link-outer {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.28571em !important;
+  color: rgb(118, 118, 118) !important;
+}
+
+._footer-copyrigh-others-link-inner {
+  font-style: inherit !important;
+  font-variant: inherit !important;
+  font-weight: inherit !important;
+  font-stretch: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  text-decoration: none !important;
+  text-align: left !important;
+  color: rgb(118, 118, 118) !important;
+}
+
+._footer-copyrigh-others-link-inner:hover {
+  text-decoration: underline !important;
 }
 
 /* SmartLayout  */
@@ -3103,6 +3213,12 @@ _autumn-discount-read-more-container {
 @media (max-width: 743px) {
   ._footer-navigation-links-inner {
     display: none !important;
+  }
+  ._footer-wrap-constraint {
+    border-top: none !important;
+  }
+  ._site-content {
+    padding-bottom: 44px !important;
   }
 }
 
@@ -3366,6 +3482,10 @@ _autumn-discount-read-more-container {
   ._footer-navigation-links-inner-column {
     width: 25% !important;
     float: left !important;
+  }
+  ._footer-copyrigh-others-link {
+    display: inline-block !important;
+    margin-left: 8px !important;
   }
 }
 
