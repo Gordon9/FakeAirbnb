@@ -10,7 +10,6 @@ const startHotOnlineExp = () => {
   const hotOnlineExpPrices = document.querySelectorAll(
     "._hot-online-exp-feeds-item-prcie-outer"
   );
-  console.log("hotOnlineExpPrices:", hotOnlineExpPrices);
 
   let datasArr = [];
   let query = "orange";
@@ -52,7 +51,7 @@ const startHotOnlineExp = () => {
       );
       const data = await response.json();
       datasArr = data.hits;
-      console.log("datasArr:", datasArr);
+      // console.log("datasArr:", datasArr);
 
       renderHotOnlineExpUrl();
       renderHotOnlineExpSubtitle();
@@ -62,7 +61,7 @@ const startHotOnlineExp = () => {
     getEdamamRecipes();
   }
 
-  initRequest();
+  // initRequest();
 };
 
 startHotOnlineExp();
