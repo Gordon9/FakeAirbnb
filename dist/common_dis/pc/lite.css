@@ -7,7 +7,7 @@
 body {
   /* background-color: #ccc !important; */
   background-color: #ffffff !important;
-  height: 400vh !important;
+  height: 700vh !important;
 }
 
 header {
@@ -355,6 +355,7 @@ header {
   position: relative !important;
   display: block !important;
   outline: none !important;
+  padding-bottom: 86px !important;
 }
 
 ._o-site-content {
@@ -2926,6 +2927,111 @@ _autumn-discount-read-more-container {
   color: rgb(255, 255, 255) !important;
 }
 
+/* FOOTER */
+
+._footer-wrap {}
+
+._footer-wrap-constraint {
+  background-color: #ffffff !important;
+  border-top: 1px solid #EBEBEB !important;
+  color: #484848 !important;
+}
+
+._footer-wrap-constraint-inner {
+  display: inherit !important;
+}
+
+._footer-navigation-links-wrapper {
+  background-color: transparent !important;
+  max-width: 1080px !important;
+  padding: 24px !important;
+}
+
+._footer-navigation-links {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.28571em !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._footer-navigation-links-inner {
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+}
+
+._footer-navigation-links-inner-column {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  min-height: 1px !important;
+  position: relative !important;
+  width: 100% !important;
+  float: left !important;
+}
+
+._footer-navigation-links-title {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+._footer-navigation-links-title-lk {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  line-height: 1.28571em !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._footer-navigation-links-list {
+  list-style: none !important;
+  margin-bottom: 0px !important;
+  margin-top: 16px !important;
+  padding-left: 0px !important;
+}
+
+._footer-navigation-link {
+  margin-bottom: 4px !important;
+}
+
+._footer-navigation-link-lk:hover {
+  text-decoration: underline !important;
+} 
+
+._footer-navigation-link-lk {
+  font-family: Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+  text-decoration: none !important;
+  color: #767676 !important;
+}
+
+._footer-navigation-link-new-release {
+  display: inline-block !important;
+  margin-left: 8px !important;
+  margin-right: -20px !important;
+  line-height: 1 !important;
+}
+
+._footer-navigation-link-new-release-wrap {
+  display: inline-block !important;
+  border: 1px solid tranparent !important;
+  border-radius: 4px !important;
+  padding: 0 4px !important;
+  background-color: rgb(0, 106, 112) !important;
+}
+
+._footer-navigation-link-new-release-inner {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.33333em !important;
+  color: rgb(255, 255, 255) !important;
+}
+
 /* SmartLayout  */
 
 @media (min-height: 475px) and (min-width: 744px) {
@@ -3245,6 +3351,15 @@ _autumn-discount-read-more-container {
     width: 100% !important;
     max-width: 568px !important;
     border-radius: 12px !important;
+  }
+  /* FOOTER */
+  ._footer-navigation-links-wrapper {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  ._footer-navigation-links-inner-column {
+    width: 25% !important;
+    float: left !important;
   }
 }
 
