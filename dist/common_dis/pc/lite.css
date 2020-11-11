@@ -3196,6 +3196,97 @@ _autumn-discount-read-more-container {
   align-self: center !important;
 }
 
+/* FOLLOW WECHAT PANEL */
+._follow-wechat-panel {
+  position: fixed !important;
+  z-index: 2000 !important;
+  top: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  overflow-y: auto !important;
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+._follow-wechat-panel-container {
+  display: table !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+._follow-wechat-panel-outer {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  padding: 64px !important;
+}
+
+._follow-wechat-panel-inner {
+  background-color: rgb(255, 255, 255) !important;
+  margin: auto !important;
+  max-width: 568px !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+._follow-wechat-panel-modal {
+  background-color: rgb(255, 255, 255) !important;
+  padding: 32px !important;
+  box-sizing: border-box !important;
+}
+
+._follow-wechat-panel-modal-close {
+  margin-bottom: 24px !important;
+}
+
+._follow-wechat-panel-modal-close-btn {
+  cursor: pointer !important;
+  background-color: transparent !important;
+  color: buttontext !important;
+  border: 0px !important;
+  display: block !important;
+}
+
+._follow-wechat-panel-modal-title {
+  border-bottom: 0px !important;
+  padding-bottom: 24px !important;
+  padding-top: 0px !important;
+}
+
+._follow-wechat-panel-modal-title-outer {
+  color: inherit !important;
+  font-size: 1em !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+._follow-wechat-panel-modal-title-inner {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  line-height: 1.25em !important;
+  color: rgb(72, 72, 72) !important;
+  padding-bottom: 2px !important;
+  padding-top: 2px !important;
+}
+
+._follow-wechat-panel-modal-wechat-official-aacount {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.375em !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+._follow-wechat-panel-modal-wechat-official-photo {
+  border: 1px solid rgb(235, 235, 235) !important;
+}
+
 /* SmartLayout  */
 
 @media (min-height: 475px) and (min-width: 744px) {
