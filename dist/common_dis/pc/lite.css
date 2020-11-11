@@ -3034,9 +3034,8 @@ _autumn-discount-read-more-container {
 }
 
 ._footer-navigation-links-copyright {
-  border-top: 1px solid rgb(235, 235, 235) !important;
-  margin-top: 16px !important;
-  padding-top: 16px !important;
+  align-content: center !important;
+  display: flex !important;
 }
 
 ._footer-navigation-links-copyright-text {
@@ -3140,6 +3139,61 @@ _autumn-discount-read-more-container {
 
 ._footer-copyrigh-others-link-inner:hover {
   text-decoration: underline !important;
+}
+
+._footer-navigation-links-copyright-social {
+  display: none !important;
+}
+
+._footer-navigation-links-copyright-social-wechat {
+  display: inline !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  vertical-align: middle !important;
+}
+
+._footer-navigation-links-copyright-social-weibo-link {
+  cursor: pointer !important;
+  background-color: transparent !important;
+  color: buttontext !important;
+  border: 0px !important;
+  display: block !important;
+}
+
+._footer-navigation-links-copyright-social-weibo {
+  display: inline-block !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  vertical-align: middle !important;
+}
+
+._footer-navigation-links-copyright-social-wechat-btn {
+  font-style: inherit !important;
+  font-variant: inherit !important;
+  font-weight: inherit !important;
+  font-stretch: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  text-decoration: none !important;
+  appearance: none !important;
+  background: transparent !important;
+  border: 0px !important;
+  cursor: pointer !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  user-select: auto !important;
+  text-align: left !important;
+  color: rgb(118, 118, 118) !important;
+}
+
+._footer-navigation-links-copyright-social-wechat-btn-inner {
+  display: flex !important;
+}
+
+._footer-navigation-links-copyright-social-wechat-btn-wrap {
+  display: inline-flex !important;
+  align-self: center !important;
 }
 
 /* SmartLayout  */
@@ -3487,6 +3541,11 @@ _autumn-discount-read-more-container {
     display: inline-block !important;
     margin-left: 8px !important;
   }
+  ._footer-navigation-links-copyright {
+    border-top: 1px solid rgb(235, 235, 235) !important;
+    margin-top: 16px !important;
+    padding-top: 16px !important;
+  }
 }
 
 @media (min-width: 1128px) {
@@ -3549,6 +3608,12 @@ _autumn-discount-read-more-container {
   ._footer-navigation-links-wrapper {
     margin: 0 auto !important;
     position: relative !important;
+  }
+  ._footer-navigation-links-copyright-social {
+    display: block !important;
+    flex: 0 0 auto !important;
+    margin-right: -8px !important;
+    white-space: nowrap !important;
   }
 }
 
