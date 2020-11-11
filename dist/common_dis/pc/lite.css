@@ -2791,6 +2791,141 @@ _autumn-discount-read-more-container {
   text-overflow: ellipsis !important;
 }
 
+._fav-square-heart-wishlist {
+  padding: 20px 16px !important;
+  overflow-y: auto !important;
+}
+
+._fav-square-heart-wishlist-create-wrap {
+  cursor: pointer !important;
+  position: relative !important;
+  touch-action: manipulation !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  transition: box-shodow 0.2s ease 0s, transform 0.1s ease 0s !important;
+  border: none !important;
+  color: inherit !important;
+  display: block !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  text-align: inherit !important;
+  text-decoration: none !important;
+  height: 100% !important;
+  width: 100% !important;
+  background: transparent !important;
+}
+
+._fav-square-heart-wishlist-create-outer {
+  -webkit-box-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+}
+
+._fav-square-heart-wishlist-create-outer:hover {
+  background: rgb(247, 247, 247) !important;
+}
+
+._fav-square-heart-wishlist-create-list-photo {
+  margin-right: 16px !important;
+  width: 64px !important;
+  height: 64px !important;
+  background: rgb(221, 221, 221) !important;
+  border-radius: 4px !important;
+}
+
+._fav-square-heart-wishlist-create-list-photo-container {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  border-radius: 4px !important;
+  background-color: rgb(34, 34, 34) !important;
+}
+
+._fav-square-heart-wishlist-create-list-default-text {
+  flex: 1 1 0% !important;
+}
+
+._fav-square-heart-wishlist-create-list-default-text-inner {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  color: rgb(34, 34, 34) !important;
+  margin-bottom: 4px !important;
+}
+
+._fav-square-heart-wishlist-create-list-default-text-date {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  color: rgb(34, 34, 34) !important;
+}
+
+._fav-square-heart-wishlist-create-list-icon {
+  flex: 0 1 0% !important;
+}
+
+._fav-square-heart-wishlist-bottom-line {
+  position: absolute !important;
+  bottom: 96px !important;
+  left: 0px !important;
+  right: 0px !important;
+  text-align: center !important;
+  border-top: 1px solid rgb(235, 235, 235)
+}
+
+._fav-square-heart-wishlist-create-list-btn {
+  -webkit-box-pack: justify !important;
+  -webkit-box-align: center !important;
+  display: flex !important;
+  flex: 0 0 auto !important;
+  border-top: 1px solid rgb(235, 235, 235) !important;
+  padding: 16px 24px !important;
+  justify-content: space-between !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+._fav-square-heart-wishlist-create-list-btn-wrap {
+  width: 100% !important;
+  text-align: right !important;
+}
+
+._fav-square-heart-wishlist-create-list-btn-wrap-done {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  touch-action: manipulation !important;
+  font-family: Cereal, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  padding: 14px 24px !important;
+  transition: box-shadow 0.2s ease 0s, transform 0.1s ease 0s !important;
+  border: none !important;
+  background: rgb(34, 34, 34) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+._fav-square-heart-wishlist-create-list-btn-wrap-done:hover {
+  border: none !important;
+  background: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
 /* SmartLayout  */
 
 @media (min-width: 743px) and (max-width: 1127px) {
