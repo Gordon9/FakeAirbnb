@@ -61,7 +61,7 @@ const startHotOnlineExp = () => {
     getEdamamRecipes();
   }
 
-  // initRequest();
+  initRequest();
 };
 
 startHotOnlineExp();

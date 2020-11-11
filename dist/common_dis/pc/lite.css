@@ -3207,6 +3207,7 @@ _autumn-discount-read-more-container {
   left: 0px !important;
   overflow-y: auto !important;
   background: rgba(0, 0, 0, 0.75) !important;
+  display: none;
 }
 
 ._follow-wechat-panel-container {
