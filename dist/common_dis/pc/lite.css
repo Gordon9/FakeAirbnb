@@ -2671,7 +2671,6 @@ _autumn-discount-read-more-container {
   flex-direction: row !important;
   align-items: flex-end !important;
   justify-content: center !important;
-  /* display: flex !important; */
   display: none;
 }
 
@@ -2928,6 +2927,14 @@ _autumn-discount-read-more-container {
 }
 
 /* SmartLayout  */
+
+@media (min-height: 475px) and (min-width: 744px) {
+  ._fav-square-heart-container {
+    -webkit-box-align: center !important;
+    padding: 40px !important;
+    align-items: center !important;
+  }
+}
 
 @media (min-width: 743px) and (max-width: 1127px) {
   ._classic-travel-city-carousel-nav {
@@ -3233,6 +3240,11 @@ _autumn-discount-read-more-container {
   }
   ._hot-online-exp-read-more-button-link-inner {
     display: inline !important;
+  }
+  ._fav-square-heart-wrap {
+    width: 100% !important;
+    max-width: 568px !important;
+    border-radius: 12px !important;
   }
 }
 

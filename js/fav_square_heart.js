@@ -11,13 +11,14 @@ const startFavSquareHeart = () => {
     "._fav-square-heart-close-btn-wrap"
   );
   const squareHeartInner = document.querySelector("._fav-square-heart-wrap");
-
   const closeSquareHeart = () => {
     squareHeartWrap.style.display = "none";
   };
+  const squareHeartBtn = document.querySelector(
+    "._fav-square-heart-wishlist-create-list-btn-wrap-done"
+  );
 
   const handleHeartWrap = (e) => {
-    console.log("e:", e);
     e = e || window.event;
     e.stopPropagation();
   };
@@ -33,6 +34,7 @@ const startFavSquareHeart = () => {
   addEvent(squareHeartInner, "click", handleHeartWrap);
   addEvent(squareHeartWrap, "click", closeSquareHeart);
   addEvent(squareHeartClose, "click", closeSquareHeart);
+  addEvent(squareHeartBtn, "click", closeSquareHeart);
 };
 
 startFavSquareHeart();
