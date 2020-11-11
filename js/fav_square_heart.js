@@ -17,6 +17,9 @@ const startFavSquareHeart = () => {
   const squareHeartBtn = document.querySelector(
     "._fav-square-heart-wishlist-create-list-btn-wrap-done"
   );
+  const squareHeartItems = document.querySelectorAll(
+    "._fav-square-heart-wishlist-create-wrap"
+  );
 
   const handleHeartWrap = (e) => {
     e = e || window.event;
